@@ -10,7 +10,7 @@ summary: "We get it: It’s scary. Filling a spot on your team with just the rig
 pageClass: service
 ---
 <header class="page-header {{ pageClass }}">
-  <div class="container">
+  <div class="container container__wide">
     <h1 class="page-title">{{ title }}</h1>
 		<div class="page-summary">{{ summary | safe }}</div>
   </div>
@@ -39,12 +39,15 @@ pageClass: service
 {% include "components/process-block.njk" %}
 
 <section class="cta-section">
-  <div class="container cta-grid invert-button-style">
-      <h2 class="heading-2">Your Tech & Talent Sherpas</h2>
-      <p class="section-subheading">P3+Uplift will help you reach new heights in talent and tech. We’re here to guide and support you no matter how treacherous the terrain.</p>
-      {% set btnText = "Let's Talk" %}
-      {% set btnUrl = "/lets-talk/" %}
-      {% include "components/link-button.njk" %}
+  <div class="container container__wide">
+    <div class="wrapper cta-grid invert-button-style">
+        <h2 class="heading-2">Your Tech & Talent Sherpas</h2>
+        <p class="section-subheading">P3+Uplift will help you reach new heights in talent and tech. We’re here to guide and support you no matter how treacherous the terrain.</p>
+        {% set style = "outline" %}
+        {% set btnText = "Let's Talk" %}
+        {% set btnUrl = "/lets-talk/" %}
+        {% include "components/link-button.njk" %}
+    </div>
   </div>
 </section>
 

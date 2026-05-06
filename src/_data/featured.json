@@ -1,21 +1,24 @@
 {
   "service-explainer": {
     "id": "service-explainer",
-    "title": "What We Do",
-    "description": "P3+Uplift is driven by collaboration and a unique <em>client-centered approach</em> that provides comprehensive and flexible outcomes to meet your needs. P3+Uplift specializes in these select services:",
+    "title": "What We <em>Do</em>",
+    "subtitle": "P3+Uplift is driven by collaboration and a unique <em>client-centered approach</em> that provides comprehensive and flexible outcomes to meet your needs. P3+Uplift specializes in these select services:",
+    "description": "",
     "image": "/images/employee_graphic.png",
     "alt": "A young tech worker writing code or designing a digital product with his team"
   },
   "proven-experience": {
     "id": "proven-experience",
-    "title": "Great Heights",
-    "description": "For more than two decades, we have been leading the field with our strategic, value-based method. <em>And we have the stats to prove it:</em>",
+    "title": "<em>Great</em> Heights",
+    "subtitle": "For more than two decades, we have been leading the field with our strategic, value-based method. <em>And we have the stats to prove it:</em>",
+    "description": "",
     "image": "/images/candidate_graphic.png",
     "alt": "A senior job candidate acing his interview with a hiring manager"
   },
   "software": {
     "id": "software",
     "title": "Quality <em>People</em> + Quality <em>Code</em> + Quality <em>Products</em>",
+    "subtitle": "",
     "description": "Our tailored solutions address your unique business needs, including custom software development, UI/UX design, product road-mapping, and release planning.",
     "image": "/images/software_graphic.png",
     "alt": "an african-american woman at a whiteboard walking through a product roadmap strategy"
@@ -23,6 +26,7 @@
   "ooux": {
     "id": "ooux",
     "title": "The <em>OOUX</em> Advantage",
+    "subtitle": "",
     "description": "Object-Oriented UX (OOUX) gives our clients a competitive edge by turning complexity into clarity. It’s a smarter, more scalable approach to creating software & digital products that aligns design and engineering early so your team delivers faster and your product feels intuitive from day one.",
     "image": "/images/ooux_graphic.png",
     "alt": "A woman holding a blue sticky note arranging colored sticky notes on a wall in front of her",
@@ -32,6 +36,7 @@
   "staffing": {
     "id": "staffing",
     "title": "Our Specialized Recruitment Process is Defined by <em>Quality</em>",
+    "subtitle": "",
     "description": "<p>We screen Candidates through a rigorous process that includes technical assessments, interviews, and reference checks — ensuring we present only the most qualified Candidates.</p><p>It’s <em>flexible</em>, including contract, contract-to-hire, and full-time placements. And it’s <em>efficient</em>. On average, we aim to provide Candidates within one week.",
     "image": "/images/staffing_graphic.png",
     "alt": "Staffing & Recruitment"
@@ -39,6 +44,7 @@
   "executive": {
     "id": "executive",
     "title": "P3+Uplift Can be Trusted to <em>Deliver</em> at Every Part of the Process",
+    "subtitle": "",
     "description": "<em>Hiring Managers</em> get a cost-effective C-suite search. <em>Fractional Leaders</em> get a partner that is experienced and well networked. <em>Executive Candidates</em> receive only top-quality placement opportunities. All parties are guaranteed confidential searches.",
     "image": "/images/executive_graphic.png",
     "alt": "A hiring manager holding a resume and talking with an executive candidate"
@@ -46,6 +52,7 @@
   "careers": {
     "id": "careers",
     "title": "Chart Your Path with P3+Uplift",
+    "subtitle": "",
     "description": "We have teams in Des Moines, Chicago, and Kansas City, and we’re always looking for talented, adaptable individuals to join us. If you’re ready to grow, build on your skills, and thrive in a dynamic environment, check out our current openings.",
     "image": "/images/careers_graphic.png",
     "alt": "A male team leader sitting at a table interviewing a candidate",

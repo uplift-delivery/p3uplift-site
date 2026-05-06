@@ -20,6 +20,10 @@
     font-size: 1rem;
     font-weight: $f_bold;
     line-height: 1;
+
+    @media (min-width: $mq_widescreen) {
+      font-size: 1.25rem;
+    }
   }
 
   &__author {

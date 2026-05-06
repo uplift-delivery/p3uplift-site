@@ -1,17 +1,19 @@
 <section class="process-section section-block">
-  <div class="process__intro">
-    <h2 class="heading-2">{{ section_title | safe }}</h2>
-    <p class="process__lead section-subheading">{{ lead }}</p>
-  </div>
+  <div class="container container__wide">
+    <div class="process__intro">
+      <h2 class="heading-2">{{ section_title | safe }}</h2>
+      <p class="process__lead section-subheading">{{ lead }}</p>
+    </div>
 
-  <div class="process__details">
-    <ul class="process__list">
-      {% for item in list %}
-      <li>
-        <h3>{{ item.title | safe }}</h3>
-        <p>{{ item.content }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+    <div class="process__details">
+      <ul class="process__list">
+        {% for item in list %}
+        <li>
+          <h3>{{ item.title | safe }}</h3>
+          <p>{{ item.content }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>

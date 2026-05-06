@@ -5,16 +5,19 @@
 	color: $c_white;
 	padding: 4rem 1.25rem 2rem 1.25rem;
 
-	.container {
-		@media (min-width: $mq_desktop) {
-			display: grid;
-		    grid-template-columns: 50% 1fr;
-		    gap: 2rem;
-		}
+	@media (min-width: $mq_desktop) {
+		display: grid;
+	    grid-template-columns: 40% 1fr;
+	    gap: 6rem;
+	}
 
-		@media (min-width: $mq_widescreen) {
-			grid-template-columns: 40% 1fr;
-		}
+	@media (min-width: $mq_widescreen) {
+		grid-template-columns: 50% 1fr;
+	}
+
+	.homepage & {
+
+		
 	}
 }
 

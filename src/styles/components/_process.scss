@@ -1,15 +1,16 @@
 @use "variables" as *;
 
 .process-section {
-
-	@media (min-width: $mq_tablet) {
-	    display: flex;
-	    flex-direction: row;
-	    gap: 3rem;
-	    align-items: center;
+	.container {
+		@media (min-width: $mq_tablet) {
+		    display: flex;
+		    flex-direction: row;
+		    gap: 3rem;
+		    align-items: center;
+		}
 	}
 
-	b { color: $c_electric-blue; }
+	em { color: $c_electric-blue; }
 }
 
 .process {

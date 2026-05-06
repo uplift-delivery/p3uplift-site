@@ -1,22 +1,24 @@
 <section class="featured-case-study case-study section-block" id="featured-{{ study.id }}">
-  <div class="case-study__visual" role="img" aria-label="Visual representation for {{ study.title }}" style="background-image: url('{{ study.image }}');">
-    <a class="cta-overlay" href="/case-studies/#{{ study.id }}"></a>
-  </div>
-
-  <div class="case-study__content invert-button-style">
-    <span class="eyebrow">Case Study</span>
-    <h2 class="case-study__title">
-      <a href="/case-studies/#{{ study.id }}">{{ study.title }}</a>
-    </h2>
-     <div class="case-study__narrative">
-      <p class="case-study__teaser">{{ study.teaser }}</p>
+  <div class="container container__wide">
+    <div class="case-study__visual" role="img" aria-label="Visual representation for {{ study.title }}" style="background-image: url('{{ study.image }}');">
+      <a class="cta-overlay" href="/case-studies/#{{ study.id }}"></a>
     </div>
 
-    <a class="link-button link-button--outline" href="/case-studies/#{{ study.id }}">
-     <span class="button__label">{{ btnText | default("Let's Talk") }}</span>
-       <span class="button__icon" aria-hidden="true" focusable="false">
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M4.108 10.857h15.31a1.143 1.143 0 1 1 0 2.286H4.108a1.143 1.143 0 0 1 0-2.286" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M11.753 19.665a1.143 1.143 0 0 1 0-1.616L17.803 12l-6.05-6.049a1.143 1.143 0 0 1 1.617-1.616L21.035 12l-7.665 7.665a1.143 1.143 0 0 1-1.617 0" clip-rule="evenodd"/></svg>
-       </span>
-    </a>
-</div>
+    <div class="case-study__content invert-button-style">
+      <span class="eyebrow">Case Study</span>
+      <h2 class="case-study__title">
+        <a href="/case-studies/#{{ study.id }}">{{ study.title }}</a>
+      </h2>
+       <div class="case-study__narrative">
+        <p class="case-study__teaser">{{ study.teaser }}</p>
+      </div>
+
+      <a class="link-button link-button--outline" href="/case-studies/#{{ study.id }}">
+       <span class="button__label">{{ btnText | default("Let's Talk") }}</span>
+         <span class="button__icon" aria-hidden="true" focusable="false">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M4.108 10.857h15.31a1.143 1.143 0 1 1 0 2.286H4.108a1.143 1.143 0 0 1 0-2.286" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M11.753 19.665a1.143 1.143 0 0 1 0-1.616L17.803 12l-6.05-6.049a1.143 1.143 0 0 1 1.617-1.616L21.035 12l-7.665 7.665a1.143 1.143 0 0 1-1.617 0" clip-rule="evenodd"/></svg>
+         </span>
+      </a>
+      </div>
+  </div>
 </section>

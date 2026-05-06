@@ -9,23 +9,23 @@
 
 {% if data %}
 <section class="offerings-section section-block" id="{{ data.slug }}-offerings">
-  <header>
-    <img class="offerings__icon" src="{{ data.icon_url }}" alt="{{ data.service }} icon" loading="lazy">
-    <h2 class="heading-2">{{ data.description }}</h2>
-  </header>
+  <div class="container container__wide">
+    <header>
+      <img class="offerings__icon" src="{{ data.icon_url }}" alt="{{ data.service }} icon" loading="lazy">
+      <h2 class="heading-2">{{ data.description }}</h2>
+    </header>
 
-  <article>
-    {% for item in data.offerings %}
-    <section id="{{ item.id }}">
-      <h3>{{ item.title }}</h3>
-      <div class="content">
-        <p>{{ item.heading }}</p>
-        <p>{{ item.content }}</p>
-      </div>
-    </section>
-    {% endfor %}
-  </article>
+    <article>
+      {% for item in data.offerings %}
+      <section id="{{ item.id }}">
+        <h3>{{ item.title }}</h3>
+        <div class="content">
+          <p>{{ item.heading }}</p>
+          <p>{{ item.content }}</p>
+        </div>
+      </section>
+      {% endfor %}
+    </article>
+  </div>
 </section>
-{% else %}
-  <!-- Debug: Could not find data for slug "{{ category }}" -->
 {% endif %}

@@ -4,10 +4,12 @@
 	&-section {
 		background-color: $c_powder-blue;
 
-		@media (min-width: $mq_tablet) {
-		    display: grid;
-		    grid-template-columns: 40% 1fr;
-		    gap: 2rem;
+		.container {
+			@media (min-width: $mq_tablet) {
+			    display: grid;
+			    grid-template-columns: 40% 1fr;
+			    gap: 2rem;
+			}
 		}
 
 		h2 { color: $c_electric-blue; }

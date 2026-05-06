@@ -7,13 +7,13 @@ summary: "P3+Uplift provides tailored solutions to help clients and businesses a
 pageClass: homepage
 ---
 <header class="page-header {{ pageClass }}">
-  <div class="container">
+  <div class="container container__wide">
     <h1 class="page-title">{{ title }}</h1>
 		<div class="page-summary">{{ summary | safe }}</div>
   </div>
 </header>
 <section class="quote-feature video--right">
-  <div class="container__wide container--encroach quote-feature__container">
+  <div class="container container__wide container--encroach quote-feature__container">
     
     <div class="quote-feature__video-wrapper">
       <iframe width="1013" height="570" src="https://www.youtube.com/embed/Bp4tI85bejo?rel=0&controls=0&modestbranding=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -30,11 +30,24 @@ pageClass: homepage
 {% set background = "powder-blue" %}
 {% include "components/feature-block.njk" %}
 
+<section class="cta-section">
+<div class="container container__wide">
+  <div class="wrapper cta-grid invert-button-style">
+      <h2 class="heading-2">Contact Our Team</h2>
+      <p class="section-subheading">Founders & enterprise leaders turn to P3+Uplift to get stuff done.</p>
+      {% set style = "outline" %}
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+  </div>
+</section>
+
 {% set entry = featured["proven-experience"] %}
 {% set layout = "image-right" %}
 {% set background = "white" %}
 {% include "components/feature-block.njk" %}
 
-{% set section_title = "What People Say" %}
-{% set category = "staffing" %}
+{% set testimonial_section_title = "What Our Partners Say" %}
+{% set testimonial_category = "staffing" %}
 {% include "components/testimonials.njk" %}

@@ -10,7 +10,7 @@ summary: "Trust. That’s what executive placements comes down to, right? Every 
 pageClass: service
 ---
 <header class="page-header {{ pageClass }}">
-  <div class="container">
+  <div class="container container__wide">
     <h1 class="page-title">{{ title }}</h1>
 		<div class="page-summary">{{ summary | safe }}</div>
   </div>
@@ -23,6 +23,19 @@ pageClass: service
 
 {% set category = "executives" %}
 {% include "components/offerings.njk" %}
+
+<section class="quote-feature video--right">
+  <div class="container__wide container--encroach quote-feature__container">
+    
+    <div class="quote-feature__video-wrapper">
+      <iframe width="1013" height="570" src="https://www.youtube.com/embed/eelRSMQlMvM?rel=0&controls=0&modestbranding=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    {% set entry = blockquotes["bj-brugman"] %}
+    {% include "components/styled-quotes.njk" %}
+
+  </div>
+</section>
 
 {% set featured_study = "cto-placement" %}
 {% set study = null %}
@@ -38,26 +51,16 @@ pageClass: service
 {% set list = process.executives %}
 {% include "components/process-block.njk" %}
 
-<section class="quote-feature video--right">
-  <div class="container__wide quote-feature__container">
-    
-    <div class="quote-feature__video-wrapper">
-      <iframe width="1013" height="570" src="https://www.youtube.com/embed/eelRSMQlMvM?rel=0&controls=0&modestbranding=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    {% set entry = blockquotes["bj-brugman"] %}
-    {% include "components/styled-quotes.njk" %}
-
-  </div>
-</section>
-
 <section class="cta-section">
-  <div class="container cta-grid invert-button-style">
-      <h2 class="heading-2">Start Your Journey</h2>
-      <p class="section-subheading">P3+Uplift will guide you on your next ascent.</p>
-      {% set btnText = "Let's Talk" %}
-      {% set btnUrl = "/lets-talk/" %}
-      {% include "components/link-button.njk" %}
+  <div class="container container__wide">
+    <div class="wrapper cta-grid invert-button-style">
+        <h2 class="heading-2">Start Your Journey</h2>
+        <p class="section-subheading">P3+Uplift will guide you on your next ascent.</p>
+        {% set style = "outline" %}
+        {% set btnText = "Let's Talk" %}
+        {% set btnUrl = "/lets-talk/" %}
+        {% include "components/link-button.njk" %}
+    </div>
   </div>
 </section>
 

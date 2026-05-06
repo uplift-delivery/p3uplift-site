@@ -12,37 +12,38 @@ pageClass: case-studies
 {% include "partials/svg-service_icons.njk" %}
 
 <header class="page-header {{ pageClass }}">
-  <div class="container">
+  <div class="container container__wide">
     <h1 class="page-title">{{ title }}</h1>
 		<div class="page-summary">{{ summary | safe }}</div>
   </div>
 </header>
 
-<section class="case_studies section-block">
+<section class="case_studies">
   {% for study in casestudies.case_studies %}
-  <article class="case-study" id="{{ study.id }}" aria-labelledby="title-{{ study.id }}">
-    
-    <div class="case-study__visual" role="img" aria-label="Visual representation for {{ study.title }}" style="background-image: url('{{ study.image }}');">
-      <div class="case-study__badge">
-        <a href="/{{ study.urlService }}/" aria-label="View more {{ study.category }} projects">
-          {% if study.category == 'software' %}Software Development + Products{% endif %}
-          {% if study.category == 'staffing' %}Staffing + Recruitment{% endif %}
-          {% if study.category == 'executives' %}Executive Placements{% endif %}
-        </a>
-        <svg class="case-study_service-icon" aria-hidden="true" focusable="false">
-          <use xlink:href="#{{ study.icon }}"></use>
-        </svg>
+  <article class="case-study section-block" id="{{ study.id }}" aria-labelledby="title-{{ study.id }}">
+    <div class="container container__wide">
+      <div class="case-study__visual" role="img" aria-label="Visual representation for {{ study.title }}" style="background-image: url('{{ study.image }}');">
+        <div class="case-study__badge">
+          <a href="/{{ study.urlService }}/" aria-label="View more {{ study.category }} projects">
+            {% if study.category == 'software' %}Software Development + Products{% endif %}
+            {% if study.category == 'staffing' %}Staffing + Recruitment{% endif %}
+            {% if study.category == 'executives' %}Executive Placements{% endif %}
+          </a>
+          <svg class="case-study_service-icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#{{ study.icon }}"></use>
+          </svg>
+        </div>
       </div>
-    </div>
 
-    {# Content Column #}
-    <div class="case-study__content">
-      <h2 class="case-study__title" id="title-{{ study.id }}">{{ study.title }}</h2>
+      {# Content Column #}
+      <div class="case-study__content">
+        <h2 class="case-study__title" id="title-{{ study.id }}">{{ study.title }}</h2>
 
-      <div class="case-study__narrative">
-        <p class="case-study__intro">{{ study.intro | safe }}</p>
-        <p class="case-study__problem">{{ study.problem | safe }}</p>
-        <p class="case-study__solution">{{ study.solution | safe }}</p>
+        <div class="case-study__narrative">
+          <p class="case-study__intro">{{ study.intro | safe }}</p>
+          <p class="case-study__problem">{{ study.problem | safe }}</p>
+          <p class="case-study__solution">{{ study.solution | safe }}</p>
+        </div>
       </div>
     </div>
 
@@ -54,6 +55,7 @@ pageClass: case-studies
   <div class="container cta-grid invert-button-style">
       <h2 class="heading-2">Speak with an Expert</h2>
       <p class="section-subheading">Peach new heights in talent and tech with P3+Uplift</p>
+      {% set style = "outline" %}
       {% set btnText = "Let's Talk" %}
       {% set btnUrl = "/lets-talk/" %}
       {% include "components/link-button.njk" %}

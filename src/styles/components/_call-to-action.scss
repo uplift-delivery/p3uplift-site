@@ -4,15 +4,18 @@
     background: $c_electric-blue;
     color: $c_white;
     padding: 2.75rem 1rem 7.75rem 1rem;
+    
+    .container {
 
-    @media (min-width: $mq_tablet) {
-        display: grid;
-        grid-template-columns: 60% 1fr;
-        gap: 2rem;
-    }
+        @media (min-width: $mq_tablet) {
+            display: grid;
+            grid-template-columns: 60% 1fr;
+            gap: 2rem;
+        }
 
-    @media (min-width: $mq_widescreen) {
-        grid-template-columns: 50% 1fr;
+        @media (min-width: $mq_widescreen) {
+            grid-template-columns: 50% 1fr;
+        }
     }
 
     h2 {
