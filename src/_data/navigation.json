@@ -1,0 +1,17 @@
+{
+  "menuItems": [
+    {
+      "text": "What We Offer",
+      "url": "#",
+      "subItems": [
+        { "text": "Software Development + Products", "url": "/software-development-and-products/" },
+        { "text": "Staffing + Recruitment", "url": "/staffing-recruitment/" },
+        { "text": "Executive Placements", "url": "/executive-placements/" }
+      ]
+    },
+    { "text": "Careers", "url": "/careers/" },
+    { "text": "Case Studies", "url": "/case-studies/" },
+    { "text": "About Us", "url": "/about-us/" },
+    { "text": "Let’s Talk", "url": "/lets-talk/" }
+  ]
+}

@@ -1,0 +1,61 @@
+---
+layout: layouts/base.njk
+
+seoTitle: Software Development Teams & Services
+metaDescription: Tailored software development & product delivery teams. From strategic research to release roadmaps, POCs to MVPs, DevOps to UX.
+
+title: Software Development + Products
+summary: "You’ve got the job + We’ve got the team. Whether it’s custom software development, customer research, product design, a combination, or something adjacent, our people can do it all — either as a dedicated team or seamlessly embedded in your organization."
+
+pageClass: service
+---
+<header class="page-header {{ pageClass }}">
+  <div class="container">
+    <h1 class="page-title">{{ title }}</h1>
+		<div class="page-summary">{{ summary | safe }}</div>
+  </div>
+</header>
+
+{% set entry = featured["software"] %}
+{% set layout = "image-right" %}
+{% set background = "white" %}
+{% include "components/feature-block.njk" %}
+
+{% set category = "software" %}
+{% include "components/offerings.njk" %}
+
+{% include "partials/teams.njk" %}
+
+{% set entry = featured["ooux"] %}
+{% set layout = "image-left" %}
+{% set background = "powder-blue" %}
+{% include "components/feature-block.njk" %}
+
+{% set featured_study = "insurance-portal-discovery" %}
+{% set study = null %}
+{% for item in casestudies.case_studies %}
+  {% if item.id == featured_study %}
+    {% set study = item %}
+    {% include "components/featured-case-study.njk" %}
+  {% endif %}
+{% endfor %}
+
+{% set section_title = "The Innovative Way We Work" %}
+{% set lead = "We listen to you from the jump, tailoring a team to your needs, not giving you a one-size-fits-most solution." %}
+{% set list = process.software %}
+{% include "components/process-block.njk" %}
+
+<section class="cta-section">
+  <div class="container__small cta-grid invert-button-style">
+      <h2 class="heading-2">Reach Out to Geek Out</h2>
+      <p class="section-subheading">Reach new heights in talent and tech with P3+Uplift</p>
+      {% set style = "outline" %}
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+</section>
+
+{% set testimonial_section_title = "What People Say" %}
+{% set testimonial_category = "software" %}
+{% include "components/testimonials.njk" %}

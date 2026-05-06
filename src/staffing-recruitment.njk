@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+
+seoTitle: Staffing + Recruitment
+metaDescription: P3+Uplift has the right nimble, responsive team to guide you through the steps in filling a spot on your team with just the right person.
+
+title: Staffing + Recruitment
+summary: "We get it: It’s scary. Filling a spot on your team with just the right person means there’s a lot at stake. P3+Uplift is just the nimble, responsive team to guide you through the steps."
+
+pageClass: service
+---
+<header class="page-header {{ pageClass }}">
+  <div class="container">
+    <h1 class="page-title">{{ title }}</h1>
+		<div class="page-summary">{{ summary | safe }}</div>
+  </div>
+</header>
+
+{% set entry = featured["staffing"] %}
+{% set layout = "image-right" %}
+{% set background = "white" %}
+{% include "components/feature-block.njk" %}
+
+{% set category = "staffing" %}
+{% include "components/offerings.njk" %}
+
+{% set featured_study = "ooux-finance-ag-data" %}
+{% set study = null %}
+{% for item in casestudies.case_studies %}
+  {% if item.id == featured_study %}
+    {% set study = item %}
+    {% include "components/featured-case-study.njk" %}
+  {% endif %}
+{% endfor %}
+
+{% set section_title = "You + Us A Partnership" %}
+{% set lead = "You + Us. That’s our focus. The spark that is P3+Uplift — that you won’t get with other companies — is our collaborative approach. Here’s what partnership looks like to us:" %}
+{% set list = process.staffing %}
+{% include "components/process-block.njk" %}
+
+<section class="cta-section">
+  <div class="container cta-grid invert-button-style">
+      <h2 class="heading-2">Your Tech & Talent Sherpas</h2>
+      <p class="section-subheading">P3+Uplift will help you reach new heights in talent and tech. We’re here to guide and support you no matter how treacherous the terrain.</p>
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+</section>
+
+{% set testimonial_section_title = "What Our Partners Say" %}
+{% set testimonial_category = "staffing" %}
+{% include "components/testimonials.njk" %}

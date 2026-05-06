@@ -1,0 +1,16 @@
+<section class="feature-block section-block background_{{ background }} {{ 'reverse-row' if layout == 'image-right' }}">
+  <div class="container__small">
+    <img class="feature-block__image" src="{{ entry.image }}" alt="{{ entry.alt }}">
+    <div class="feature-block__content">
+      <h2 class="feature-block__title heading-2">{{ entry.title | safe }}</h2>
+      <div class="feature-block__body">
+        {{ entry.description | safe }}
+      </div>
+      {% if entry.cta_url %}
+        {% set btnText = entry.cta_text %}
+        {% set btnUrl = entry.cta_url %}
+        {% include "components/link-button.njk" %}
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,94 @@
+@use "variables" as *;
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0.1875rem solid $c_electric-blue;
+    background-color: $c_electric-blue;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: $c_white;
+    font-weight: $f_bold;
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    transition:
+        border 200ms ease-in-out,
+        background 200ms ease-in-out,
+        color 200ms ease-in-out;
+
+    .button__icon {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 0.5rem;
+        transition: margin 200ms ease-out 100ms;
+
+        svg {
+            display: block;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $c_electric-blue;
+        border-color: $c_electric-blue;
+
+        .button__icon {
+            margin-left: 1rem;
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $c_electric-blue;
+
+        &:hover,
+        &:focus {
+            background-color: $c_ballpoint;
+            color: $c_white;
+            border-color: $c_ballpoint;
+        }
+    }
+
+    .invert-button-style & {
+        border-color: $c_white;
+        color: $c_electric-blue;
+        background-color: $c_white;
+
+        &:hover,
+        &:focus {
+            background-color: $c_blaze-orange;
+            color: $c_white;
+            border-color: $c_blaze-orange;
+
+            .button__icon {
+                margin-left: 1rem;
+            }
+        }
+
+        &--outline {
+            background-color: transparent;
+            color: $c_white;
+
+            &:hover,
+            &:focus {
+                background-color: $c_white;
+                color: $c_electric-blue;
+                border-color: $c_white;
+            }
+        }
+    }
+
+    &.external-link {
+        .button__icon { transition: all 200ms ease-out 100ms; }
+        &:hover,
+        &:focus {
+            .button__icon {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

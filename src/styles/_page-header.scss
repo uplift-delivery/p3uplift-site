@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.page-header {
+	background: $gradient-blue;
+	color: $c_white;
+	padding: 4rem 1.25rem 2rem 1.25rem;
+
+	.container {
+		@media (min-width: $mq_desktop) {
+			display: grid;
+		    grid-template-columns: 50% 1fr;
+		    gap: 2rem;
+		}
+
+		@media (min-width: $mq_widescreen) {
+			grid-template-columns: 40% 1fr;
+		}
+	}
+}
+
+.page-title {
+	font-size: 2.25rem;
+	font-weight: $f_bold;
+	margin-bottom: 1.5rem;
+
+	@media (min-width: $mq_desktop) {
+		font-size: 2.5rem;
+	}
+
+	@media (min-width: $mq_widescreen) {
+		font-size: 3.75rem;
+	}
+}
+
+.page-summary {
+	font-size: 1.25rem;
+	font-weight: $f_semibold;
+
+	@media (min-width: $mq_widescreen) {
+		font-size: 1.5rem;
+		// padding: 0 4rem;
+	}
+}

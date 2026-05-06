@@ -1,0 +1,97 @@
+[
+  {
+    "person": {
+      "title": "Applications Planning Manager"
+    },
+    "source": "Des Moines-based Health Insurance Company",
+    "quote": "P3+Uplift has been a go-to provider for staffing consultants for our team’s <strong>highly complex</strong> and unique projects. The team works closely with me to really understand the <strong>niche</strong> skills our products demand.",
+    "categories": ["client", "staffing", "executives"]
+  },
+  {
+    "person": {
+      "title": "VP of Employee Engagement"
+    },
+    "source": "Des Moines-based Technology Company",
+    "quote": "I’ve had the pleasure of working closely with P3+Uplift as a Recruited Candidate and Hiring Leader. The P3+Uplift team goes <strong>above and beyond</strong> to develop relationships with their consultants and clients.",
+    "categories": ["client", "staffing", "executives"]
+  },
+  {
+    "person": {
+      "name": "Joel Harris",
+      "role": "CEO & Co-Founder"
+    },
+    "source": "Genvax",
+    "quote": "I am <strong>blown away</strong> by the work of the P3+Uplift team. Having managed software products in the past, I had experience with working with individuals on new products in new markets … They also understood the ins and outs of design sprints which gave my internal team focus and let them do their day job.",
+    "categories": ["client", "software"]
+  },
+  {
+    "person": {
+      "name": "BJ Brugman",
+      "role": "Co-Founder and CEO"
+    },
+    "source": "Distynct",
+    "quote": "Where I’ve found that I clicked with this team is that there’s real <strong>genuine interest</strong> in what the business is doing and a genuine interest to help. <strong>I really feel that</strong> from this team.",
+    "categories": ["client", "software", "executives"]
+  },
+  {
+    "person": {
+      "name": "Sunil B.",
+      "role": ""
+    },
+    "source": "Current P3+Uplift Client",
+    "quote": "P3+Uplift has been <strong>instrumental</strong> in helping our group establish model behavior and practices within cross-functional product teams. The expertise and guidance each team member brought as part of multiple product teams provided valuable learning opportunities for our staff which in turn <strong>accelerated the maturity</strong> of our tech stack.",
+    "categories": ["client", "software"]
+  },
+  {
+    "person": {
+      "name": "Katie Holtz",
+      "role": "Vice President"
+    },
+    "source": "PigEasy",
+    "quote": "The P3+Uplift team went <strong>above & beyond</strong> to understand and succinctly deliver our project goals. Their ability to understand and translate our vision into an intuitively designed and functional app was <strong>truly impressive</strong>.",
+    "categories": ["client", "software"]
+  },
+  {
+    "person": {
+      "title": "Former VP of Technology"
+    },
+    "source": "Geonetric",
+    "quote": "The positive impact P3+Uplift has had on our team in two 10-week engagements has been absolutely incredible. The <strong>talent level is so high</strong> that you don’t necessarily need a long-term engagement to see a <strong>significant ROI</strong>.",
+    "categories": ["client", "software", "staffing"]
+  },
+  {
+    "person": {
+      "title": "Chief Technology Officer"
+    },
+    "source": "Iowa construction & materials company",
+    "quote": "The best investment of the year. Not only did we get an innovative product that offered high value for our business, but the paired development with my junior level team generated some <strong>huge wins</strong> in their engineering maturity. We now have some <strong>rock-solid foundations</strong> to keep moving forward internally.",
+    "categories": ["client", "software"]
+  },
+  {
+    "person": {
+      "name": "Rohit",
+      "role": "Java Developer"
+    },
+    "source": "",
+    "quote": "P3+Uplift provided an excellent experience for my 6-month contract-to-hire role. Their communication was top-notch, ensuring a seamless transition and ongoing support. Highly recommended for their professionalism & expertise in the software contracting field.",
+    "categories": ["candidate"]
+  },
+  {
+    "person": {
+      "name": "Hannah",
+      "role": "Technical Writer"
+    },
+    "source": "",
+    "quote": "P3+Uplift is an amazing company to work with. Everyone at P3+Uplift was incredibly helpful and informative during my time working with them, and they found me an opportunity I would have never found on my own. 10/10 would recommend.",
+    "categories": ["candidate"]
+  },
+  {
+    "person": {
+      "name": "Mithun",
+      "role": "Data Analyst"
+    },
+    "source": "",
+    "quote": "Working with P3+Uplift has been an outstanding experience. Their communication is exceptional, ensuring smooth transitions and ongoing support. After nearly three years of working together in multiple engagements, I can confidently say that P3+Uplift excels in transparency, professionalism, and expertise in the software contracting industry.",
+    "categories": ["candidate"]
+  }
+]

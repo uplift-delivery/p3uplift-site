@@ -1,0 +1,88 @@
+{
+  "case_studies": [
+    {
+      "id": "insurance-portal-discovery",
+      "category": "software",
+      "urlService": "software-development-and-products",
+      "icon": "icon-software_dev",
+      "image": "/images/case-studies/case-study_insurance-portal-discovery.jpg",
+      "title": "Insurance Portal Discovery",
+      "teaser": "Through a nine-week discovery and roadmap phase, we helped a life insurance company identify the most impactful features for their digital transformation. The organization faced a complex technical landscape that made prioritization difficult. This process provided a clear path to modernize their portals while ensuring seamless integration with existing systems.",
+      "intro": "<b>An annuity and life insurance company</b> needed to revamp its agent and client portals. To increase usage and compete with large industry players, business leaders knew they needed to streamline access and focus on user needs.",
+      "problem": "<b>But</b> lacking comprehensive research, they faced an uphill battle determining the best strategy to make the biggest impact and address the most pressing issues in the coming year.",
+      "solution": "<b>So</b> product and IT stakeholders worked with P3+Uplift to bolster the existing customer insights team and chart a path forward. After investigating some of the most pressing issues over nine weeks, a small P3+Uplift team presented a roadmap of portal improvements that could seamlessly integrate with the company’s existing technology and satisfy urgent unmet needs."
+    },
+    {
+      "id": "startup-hippa-mvp",
+      "category": "software",
+      "urlService": "software-development-and-products",
+      "icon": "icon-software_dev",
+      "image": "/images/case-studies/case-study_startup-hippa-mvp.jpg",
+      "title": "Bringing Product Ideas to Fruition",
+      "teaser": "By conceptualizing a targeted product strategy, we helped a healthcare startup navigate the move from an ambitious vision to a market-ready suite of applications. The founders initially struggled to narrow their focus between several competing care models. The result was a set of HIPAA-compliant tools designed to reduce hospital readmission rates.",
+      "intro": "<b>A Texas healthcare startup</b> wanted to minimize hospital readmissions for hospice care patients, a significant but preventable issue in palliative care. Early warning signs go undetected due to fragmented medical records and unorganized patient data, leading to financial hardship for both the patients and care providers.",
+      "problem": "<b>But</b> the founding team wrestled with its ambitious vision, uncertain about whether they should focus on home health care, hospice management, or patient communications. At a standstill, they needed assistance shaping a path forward and sought out P3+Uplift.",
+      "solution": "<b>So</b> a team of strategic thinkers at P3+Uplift researched and conceptualized a variety of marketable solutions, then drafted a plan to get the startup from idea to reality. Our design and engineering team seamlessly embedded with the startup and then created a comprehensive suite of HIPAA-compliant apps to help patients and their care team reduce readmissions and the need for emergency services."
+    },
+    {
+      "id": "agtech-iot-app-dev",
+      "category": "software",
+      "urlService": "software-development-and-products",
+      "icon": "icon-software_dev",
+      "image": "/images/case-studies/case-study_agtech-iot-app-dev.jpg",
+      "title": "App Development for Ag IOT",
+      "teaser": "We moved an Iowa Ag startup from a technical concept to a working MVP in just 23 weeks. While their sensor technology was innovative, they lacked the software infrastructure to make that data accessible to their customers. Our process translated raw IoT signals into actionable insights, allowing for a successful market launch.",
+      "intro": "<b>An Iowa-based Ag startup</b> created an innovative device to help pork producers reduce feed waste and maintain healthy sows during the entire breeding process. They’d found a way to include electronic sensors to help farmers track food and water consumption of individual animals – bringing their device into the Ag IOT world and changing the industry.",
+      "problem": "<b>But</b> outside of their own ingenuity, the small startup didn’t have a way to develop software that could turn all the data into accessible, actionable insights.",
+      "solution": "<b>So</b> they turned to P3+Uplift, who took their problem from idea to working MVP in just 23 weeks – just in time for a huge industry convention. They were able to realize their vision and take it to market in under six months."
+    },
+    {
+      "id": "ooux-finance-ag-data",
+      "category": "staffing",
+      "urlService": "staffing-recruitment",
+      "icon": "icon-staffing",
+      "image": "/images/case-studies/case-study_ooux-finance-ag-data.jpg",
+      "title": "Better Data Experience",
+      "teaser": "Through Object-Oriented UX (OOUX), our team organized complex financial data systems for an international fertilizer company. The firm’s primary challenge was a lack of visibility that hindered communication across departments. This data architecture project improved internal collaboration and deepened leadership’s understanding of their own digital services.",
+      "intro": "<b>An international fertilizer company</b> had a data governance problem. The business struggled to realize its goal of being a data-driven company following a slew of acquisitions. A group of data-focused leaders sought to change that, starting with digital finance products.",
+      "problem": "<b>But</b> documenting and clearly communicating the inner workings of these complex services to people outside of the department became a challenge.",
+      "solution": "<b>So</b> they used the UX talent at P3+Uplift to organize and map their data system in a way that could be easily understood by their peers and improve collaboration across different areas of the business. In 3 weeks, leadership said we knew more about the business than many of their long-tenured employees."
+    },
+    {
+      "id": "ag-erp-data-management",
+      "category": "software",
+      "urlService": "software-development-and-products",
+      "icon": "icon-software_dev",
+      "image": "/images/case-studies/case-study_ag-erp-data-management.jpg",
+      "title": "Modernized Data Management",
+      "teaser": "To manage the technical complexity of a dual-facility processing site, we implemented a custom reporting layer that bridges the gap between legacy hardware and modern analytics. Following a major private equity investment, the facility’s data volume surged beyond the capacity of its existing tools. We guided the transition to a modern ERP-adjacent reporting system, ensuring that critical operations data is now automated and accessible for everyone from the shop floor to the executive board.",
+      "intro": "<b>A data-driven private equity firm</b> built a $200 million wheat mill next to an existing 17-year-old ethanol processing plant to form the largest gluten supplier in North America. This change not only dramatically increased the tech footprint within the facility but also the amount of data being generated from multiple different sources.",
+      "problem": "<b>But</b> old technology in the ethanol facility meant this data was being inefficiently collected and managed — a headache for operations staff who depended on this information for FDA audits.",
+      "solution": "<b>So</b> P3+Uplift implemented a new reporting platform that manages and automates data consumption and visualizations for investors, executives, and team members."
+    },
+    {
+      "id": "legacy-insurance-website",
+      "category": "software",
+      "urlService": "software-development-and-products",
+      "icon": "icon-software_dev",
+      "image": "/images/case-studies/case-study_legacy-insurance-website.jpg",
+      "title": "Legacy Website Challenges",
+      "teaser": "Supporting an internal IT team through a creative and technical transition, we helped a century-old insurance company revitalize its customer-facing web presence. The institution encountered significant bottlenecks while attempting to modernize legacy systems. We delivered a simplified user experience that updated their digital tools without disrupting their established business model.",
+      "intro": "Amid a brand refresh, A 100-year-old <b>life & medical insurance company</b> took to the challenge of revitalizing its outdated customer-facing website, which had become an obstacle to generating new business.",
+      "problem": "<b>But</b> company IT teams struggled to solve many of the technical and creative problems that kept popping up.",
+      "solution": "<b>So</b> they turned to P3+Uplift, who supported the company IT team by creating a brand-new site, complete with an agent search, audience-focused content, and a simplified experience."
+    },
+    {
+      "id": "cto-placement",
+      "category": "executives",
+      "urlService": "executive-placements",
+      "icon": "icon-executives",
+      "image": "/images/case-studies/case-study_cto-placement.jpg",
+      "title": "Growing a Company with its first CTO",
+      "teaser": "By defining specific technical requirements and vetting high-level talent, we placed a CTO for a distribution company in less than six weeks. The organization needed a unique leader to guide a multi-year cloud migration and infrastructure upgrade. This placement provided the strategic oversight necessary to manage their long-term technical transition.",
+      "intro": "<b>A distributing company looking to overhaul its tech systems</b> needed the perfect candidate with multiple skill sets.",
+      "problem": "<b>But</b> the position would be highly unique to the distributor’s core business involving a multi-year technology transformation: identifying its current state, infrastructure upgrades, developing a plan to move toward cloud systems, sourcing new tech vendors, and hiring.",
+      "solution": "<b>So</b> P3+Uplift worked directly with the CEO, COO, and HR Director to craft the job requirements and qualifications, determining what background, personality, skills, motivation, and—crucially—what communication style would be needed. After initial screening, three highly qualified and vetted Candidates stood out and were presented. To ensure trust and maintain momentum, P3+Uplift stayed in close touch with each Candidate to align busy schedules and provided weekly updates to the HR Director. From the initial brief to the successful placement, the search took less than six weeks."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "troy-krueger": {
+    "id": "troy",
+    "quote": "Our definition of success is to work quickly and deliver the highest quality results.",
+    "person": {
+      "name": "Troy Krueger",
+      "role": "Owner",
+      "company": "P3+Uplift"
+    }
+  },
+  "bj-brugman": {
+    "id": "bj",
+    "quote": "Where I’ve found that I clicked with this team is that there’s real genuine interest to help.",
+    "person": {
+      "name": "BJ Brugman",
+      "role": "CEO & Co-Founder",
+      "company": "Distynct"
+    }
+  }
+}

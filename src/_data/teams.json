@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Discovery Team",
+    "icon": "icon-discovery_team",
+    "description": "Prove out what’s worth building before you make any major engineering investments.",
+    "listTitle": "We work alongside your leaders to:",
+    "features": [
+      "Frame the right opportunity and define learning goals",
+      "Test assumptions through research, prototypes, and experiments",
+      "Align priorities, risks, and success metrics",
+      "Validate market, model, and feasibility early",
+      "Deliver a roadmap, backlog, and executable path forward"
+    ],
+    "buttonLabel": "Start your discovery",
+    "buttonUrl": "/lets-talk/"
+  },
+  {
+    "title": "Velocity Team",
+    "icon": "icon-velocity_team",
+    "description": "Add capacity to your existing team to rapidly execute clearly prioritized and well-defined work.",
+    "listTitle": "Rapid execution comes to life with:",
+    "features": [
+      "Immediate momentum, leaping from kickoff straight into delivery without extra ramp-up.",
+      "Focus on known problems to keep progress predictable and messy, ambiguous work out.",
+      "Fast, predictable delivery that doesn’t add overhead or new processes to your workflow."
+    ],
+    "buttonLabel": "Hit the ground running",
+    "buttonUrl": "/lets-talk/"
+  },
+  {
+    "title": "Delivery Team",
+    "icon": "icon-delivery_team",
+    "description": "Take a defined initiative from start to finish and ensure you're building the right thing.",
+    "listTitle": "Ready to act? We’ll help get it done by:",
+    "features": [
+      "Identifying opportunities & framing initiatives around real user needs & business impact.",
+      "Validating assumptions early through research, prototypes, and rapid experimentation.",
+      "Iterating rapidly with stakeholders and users, integrating design thinking and agile execution for seamless end-to-end delivery.",
+      "Building for scale, laying the foundation for future innovation and organizational learning."
+    ],
+    "buttonLabel": "Let's get it done",
+    "buttonUrl": "/lets-talk/"
+  },
+  {
+    "title": "Embedded Expert",
+    "icon": "icon-embedded_expert",
+    "description": "Senior leaders embedded to own your toughest problems and drive them to completion.",
+    "listTitle": "Our experts create impact by:",
+    "features": [
+      "Owning complex initiatives, translating strategy into executable plans while actively managing scope, risk, timelines, and budgets.",
+      "Leading & coordinating enterprise‑wide programs across systems, teams, and partners.",
+      "Bringing clarity to decision‑making by aligning executives, delivery teams, and vendors.",
+      "Operating as an extension of your leadership team to support durable, long‑term outcomes."
+    ],
+    "buttonLabel": "Find your expert",
+    "buttonUrl": "/lets-talk/"
+  }
+]

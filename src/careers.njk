@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+
+seoTitle: Careers
+metaDescription: Ready to make your move? P3+Uplift is your trusted partner and guide through the entire recruitment and placement process.
+
+title: Careers
+summary: "Are you ready to make the move to a new opportunity? P3+Uplift is your trusted partner and guide through the entire recruitment and placement process. We are known for our responsiveness and the close relationships we build. Whether you’re just curious about what is out there or actively looking to step up to a new role, you’ll have our complete attention and guaranteed confidentiality."
+
+pageClass: service
+---
+<header class="page-header {{ pageClass }}">
+  <div class="container">
+    <h1 class="page-title">{{ title }}</h1>
+		<div class="page-summary">{{ summary | safe }}</div>
+  </div>
+</header>
+
+{% set entry = featured["careers"] %}
+{% set layout = "image-right" %}
+{% set background = "white" %}
+{% include "components/feature-block.njk" %}
+
+<section id="careers-offerings">
+  <header>
+      <img class="offerings__icon" src="/images/offerings/careers_icon.png" alt="Careers icon" loading="lazy">
+    <h2 class="heading-2">Become a Consultant</h2>
+  </header>
+
+  <ul class="professional-roles-list">
+    <li>Business Analysts</li>
+    <li>Software Developers</li>
+    <li>Cloud Engineers</li>
+    <li>Data Engineers</li>
+    <li>Scrum Masters</li>
+    <li>Data Analysts</li>
+    <li>Solution Architects</li>
+    <li>Full-Stack Developers</li>
+    <li>Project Managers</li>
+    <li>Coaching and Products</li>
+    <li>Technical Support</li>
+    <li>Product Owners</li>
+    <li>QA Engineers</li>
+    <li>IT Security</li>
+    <li>Data Analytics</li>
+    <li>Salesforce</li>
+    <li>Help Desk</li>
+    <li>UI/UX Designers</li>
+  </ul>
+</section>
+
+{% set section_title = "You + Opportunities" %}
+{% set lead = "P3+Uplift is all about building things of real value—from software products to management teams. Sound like fun? Here’s why you should use P3+Uplift for your placement journey:" %}
+{% set list = process.careers %}
+{% include "components/process-block.njk" %}
+
+<section class="cta-section">
+  <div class="container cta-grid invert-button-style">
+      <h2 class="heading-2">Looking for your next career opportunity?</h2>
+      <p class="section-subheading">Explore our current job openings and apply today!</p>
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+</section>
+
+{% set testimonial_section_title = "What Candidates Say" %}
+{% set testimonial_category = "candidate" %}
+{% include "components/testimonials.njk" %}

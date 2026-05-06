@@ -1,0 +1,40 @@
+<section class="testimonials-section section-block">
+  <div class="container">
+    {% if testimonial_section_title %}
+      <h2 class="section-title heading-2">
+        {{ testimonial_section_title }}
+      </h2>
+    {% endif %}
+
+    <div class="testimonials">
+      {% for item in testimonials %}
+        {% if item.categories.includes(testimonial_category) %}
+          <blockquote class="testimonial__item">
+            <p class="testimonial__content">{{ item.quote | safe }}</p>
+            
+            <footer class="testimonial__footer">
+              <cite class="testimonial__author">
+                {% if item.person.name %}
+                  {{ item.person.name }}
+                {% else %}
+                  {{ item.person.title }}
+                {% endif %}
+              </cite>
+
+              <span class="testimonial__meta">
+                {% if item.person.name and item.person.role %}
+                  {{ item.person.role }}
+                {% endif %}
+                
+                {% if item.source %}
+                  {% if item.person.role or item.person.name %} at {% endif %} 
+                  {{ item.source }}
+                {% endif %}
+              </span>
+            </footer>
+          </blockquote>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

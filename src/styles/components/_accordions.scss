@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+.accordion {
+    border-bottom: 0.5px solid $c_powder-blue;
+    &:last-child { border-bottom: none; }
+    summary {
+        font-size: 2rem;
+        font-weight: $f_bold;
+        line-height: 1;
+        padding: 1rem 2rem 1rem 0;
+        list-style: none; // Removes default arrow in most browsers
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        &::-webkit-details-marker {
+          display: none; // Specific fix for Safari
+        }
+
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0.625rem;
+          background-color: currentColor;
+          transition: all 200ms cubic-bezier(0.6, -0.28, 0.74, 0.05);
+        }
+
+        // Horizontal Line (Always visible)
+        &:after {
+          width: 0.75rem;
+          height: 0.125rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        // Vertical Line (The "plus" part)
+        &:before {
+          width: 0.125rem;
+          height: 0.75rem;
+          top: 50%;
+          right: 0.9375rem; // Adjust to center over the horizontal line
+          transform: translateY(-50%);
+        }
+    }
+
+    // Toggle logic for open state
+    &[open] {
+      summary {
+        &:before {
+          // Rotate or scale the vertical line to hide it, creating a minus sign
+          height: 0rem;
+        }
+        
+        &:after {
+          // Optional: slight rotation or color change for the minus sign
+          background-color: $c_ice-blue; // Example brand color
+        }
+      }
+    }
+    
+    .details-content {
+        padding: 1rem 0 1.75rem 0;
+    }
+}

@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+.process-section {
+
+	@media (min-width: $mq_tablet) {
+	    display: flex;
+	    flex-direction: row;
+	    gap: 3rem;
+	    align-items: center;
+	}
+
+	b { color: $c_electric-blue; }
+}
+
+.process {
+	&__intro {
+		@media (min-width: $mq_tablet) {
+			flex: 1 1 40%;
+			margin-top: 0.5rem;
+		}
+		h2 {
+			color: $c_electric-blue;
+		}
+	}
+
+	&__details {
+		@media (min-width: $mq_tablet) {
+			flex: 1 1 60%;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		li {
+			margin-bottom: 1.25rem;
+			padding-left: 1.75rem;
+			position: relative;
+
+			&:before {
+				display: block;
+				position: absolute;
+				top: 0.25rem;
+				left: 0;
+				height: 1.125rem;
+				width: 1.125rem;;
+				content: "+";
+				color: $c_sky-blue;
+				font-family: $f_poppins;
+				font-size: 2rem;
+				font-weight: $f_bold;
+				line-height: 0.5;
+			}
+
+			h3 {
+				display: inline-block;
+				vertical-align: text-bottom;
+				font-family: $f_roboto;
+				font-weight: $f_bold;
+				font-size: 1.25rem;
+				line-height: 1.25;
+				margin-bottom: 0.25rem;
+			}
+		}
+	}
+
+}

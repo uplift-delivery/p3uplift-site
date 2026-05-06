@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{{ seoTitle or metadata.tagline }} | {{ company.company }} - {{ metadata.tagline }}</title>
+    <meta name="description" content="{{ metaDescription or metadata.description }}" />
+    <link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title or metadata.title }}" />
+    <meta property="og:description" content="{{ description or metadata.description }}" />
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}" />
+    <meta property="og:site_name" content="P3+Uplift" />
+    <meta property="og:image" content="{{ metadata.url }}{{ image or '/assets/img/og-default.png' }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="{{ bodyClass }}">
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    {% include "components/site-header.njk" %}
+
+    <main id="main-content" tabindex="-1">
+        {{ content | safe }}
+    </main>
+
+    {% include "partials/footer.njk" %}
+</body>
+</html>

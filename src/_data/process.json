@@ -1,0 +1,58 @@
+{
+  "software": [
+    {
+      "title": "Global consulting talent without the price tag",
+      "content": "Our teams are comprised of senior-level professionals, well versed in many technologies, delivery methods, and industries."
+    },
+    {
+      "title": "We meet clients where they are",
+      "content": "Whether you’re highly adaptive and customer-centric, beginning your Agile transformation, or just getting by, our people know how to adapt and deliver (no handholding or babysitting necessary). We plug into your organization without a fuss."
+    },
+    {
+      "title": "Active consultants – not order takers",
+      "content": "Our consultants are proactive partners who actively listen to understand your unique needs and goals. To deliver lasting value, we go beyond the task at hand, striving to leave every project better than we found it and ensuring your success."
+    }
+  ],
+  "staffing": [
+    {
+      "title": "You tell us your needs + <b>We listen</b>",
+      "content": "Our Account Executives are open and ready to learn about you and your goals. We want to truly understand your strategic business objectives, your timelines, and the talent and opportunities you want."
+    },
+    {
+      "title": "You have high expectations + <b>We exceed them</b>",
+      "content": "Our Recruiters are tech experts and are part of the tech community, so we know where the highly skilled talent is. Candidates that we present are ready to get to work immediately."
+    },
+    {
+      "title": "You want communication + <b>We stay in touch</b>",
+      "content": "P3+Uplift Recruiters and Account Executives are always reachable. We are committed to ensuring both Candidates and Clients are completely satisfied."
+    }
+  ],
+  "executives": [
+    {
+      "title": "Personalized process",
+      "content": "P3+Uplift offers a retained search service that takes a unique and customized approach to identifying and attracting the most qualified Candidates for your organization."
+    },
+    {
+      "title": "Broad reach",
+      "content": "By leveraging an extensive network of senior leaders and executives both nationally and locally, P3+Uplift provides access to an immense talent pool."
+    },
+    {
+      "title": "Relationship driven",
+      "content": "With P3+Uplift’s select client list, we ensure that you will discover more qualified Candidates, including from competitors and sources that may not be available through other firms."
+    }
+  ],
+  "careers": [
+      {
+        "title": "Team-based model",
+        "content": "Our Recruiters will become your closest allies and guides. We have deep knowledge and insights into countless industries. But we also admit when we don’t know something and ask questions to find out. This mindset is key to our success in landing you the perfect placement."
+      },
+      {
+        "title": "Full time or consultant roles",
+        "content": "Your hiring journey is unique to you, so we carefully tailor the process to your specific needs and goals. Whether you’re looking for a full-time position within an organization or prefer to take on project-based work with multiple opportunities, we deliver."
+      },
+      {
+        "title": "Executive placement",
+        "content": "We directly engage the passive marketplace, uncovering leaders who are referred and ready to advance their careers. Our skilled team partners with you to deliver the best possible executive services. We offer fractional leadership placements as well as leadership coaching services, too."
+      }
+    ]
+}

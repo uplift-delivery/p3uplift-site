@@ -1,0 +1,40 @@
+{% include "partials/svg-team_icons.njk" %}
+<section class="teams-section section-block">
+  <h2 class="heading-2">Teams Designed to Get Sh*t Done</h2>
+  <div class="container__small team-block__grid">
+
+    {% for team in teams %}
+      <div class="team-block__item">
+        
+        <div class="team-block__header">
+          <svg class="team-block__icon" aria-hidden="true">
+            <use href="#{{ team.icon }}"></use>
+          </svg>
+          <h3>{{ team.title }}</h3>
+        </div>
+
+        <div class="team-block__content">
+          <p class="team-block__intro">{{ team.description }}</p>
+          <h4>{{ team.listTitle }}</h4>
+          <ul class="team-block__list">
+            {% for feature in team.features %}
+              <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+
+          {% if team.buttonUrl and team.buttonLabel %}
+            <div class="team-block__actions">
+              <a href="{{ team.buttonUrl }}" class="link-button link-button--outline">
+                <span class="button__label">{{ team.buttonLabel }}</span>
+                <span class="button__icon" aria-hidden="true" focusable="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M4.108 10.857h15.31a1.143 1.143 0 1 1 0 2.286H4.108a1.143 1.143 0 0 1 0-2.286" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M11.753 19.665a1.143 1.143 0 0 1 0-1.616L17.803 12l-6.05-6.049a1.143 1.143 0 0 1 1.617-1.616L21.035 12l-7.665 7.665a1.143 1.143 0 0 1-1.617 0" clip-rule="evenodd"/></svg>
+                </span>
+              </a>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+   {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,109 @@
+@use "variables" as *;
+
+.teams-section {
+	h2 {
+		text-align: center;
+		color: $c_ballpoint;
+		margin-bottom: 2rem;
+
+		@media (min-width: $mq_desktop) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.team-block {
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+
+		@media (min-width: $mq_tablet) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__item {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 0.75rem;
+		border: 1px solid $c_ice-blue;
+		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+		background: $gradient-ltblue;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		color: $c_blaze-orange;
+
+		h3 {
+			font-size: 1.5rem;
+			color: $c_navy-night;
+
+			@media (min-width: $mq_desktop) {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	&__icon {
+		height: 2.625rem;
+		width: 2.625rem;
+		display: inline-block;
+	}
+
+	&__intro {
+		font-size: 1.25rem;
+		font-weight: $f_bold;
+		line-height: 1.2;
+		color: $c_navy-night;
+		margin-bottom: 1rem;
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		h4 {
+			font-size: 1.5rem;
+			font-weight: $f_bold;
+			color: $c_electric-blue;
+			line-height: 1.2;
+		}
+	}
+
+	&__list {
+		margin: 1rem 0;
+		flex: 1 1 auto;
+		li {
+			margin-bottom: 0.75rem;
+			&:last-child { margin-bottom: 0; }
+
+			&::marker {
+				color: $c_blaze-orange;
+			}
+		}
+	}
+
+	&__actions {
+		border-top: 1px solid $c_ice-blue;
+		margin: 1.5rem 0 0 0;
+		padding: 1.5rem 0 0 0;
+		width: 100%;
+		text-align: center;
+
+		.link-button {
+			width: 100%;
+			@media (min-width: $mq_desktop) {
+				width: auto;
+			}
+		}
+	}
+}

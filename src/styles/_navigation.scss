@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+header[role="banner"] {
+  background: $gradient-blue;
+  color: $c_white;
+  padding: 4rem 1.25rem 2rem 1.25rem;
+
+  .header__logo {
+    display: block;
+    width: 16rem;
+    line-height: 1;
+  }
+  
+  nav {
+    // Navigation styles
+    
+    ul {
+      // Main menu list
+      
+      li {
+        // Main menu items
+
+        a {
+          color: $c_white;
+          font-weight: $f_bold;
+          text-decoration: none;
+        }
+        
+        ul {
+          // Sub-menu logic
+        }
+      }
+    }
+  }
+}

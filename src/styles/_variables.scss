@@ -1,0 +1,31 @@
+$c_white: #FFF;
+$c_powder-blue: #E8F0FC;
+$c_ice-blue: #C2D9F8;
+$c_sky-blue: #4D9AF5;
+$c_blueberry: #2777E3;
+$c_electric-blue: #0054D1;
+$c_ballpoint: #002B6B;
+$c_navy-night: #081D51;
+$c_black: #06080E;
+$c_blaze-orange: #E26225;
+
+$gradient-spectrum: linear-gradient(90deg, $c_blaze-orange 0%, $c_electric-blue 54%, $c_navy-night 100%);
+$gradient-blue: linear-gradient(270deg, $c_electric-blue 33%, $c_ballpoint 140%);
+$gradient-ltblue: linear-gradient(50deg, rgba($c_powder-blue, 0.20) 0%, rgba($c_powder-blue, 0.35) 25%, $c_white 65%, rgba($c_powder-blue, 0.35) 99%);
+
+
+$f_poppins: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$f_roboto: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$f_light: 300;
+$f_normal: 400;
+$f_semibold: 500;
+$f_bold: 700;
+$f_heavy: 900;
+
+
+
+
+$mq_widescreen: 75rem;
+$mq_desktop: 60rem;
+$mq_tablet: 48rem;

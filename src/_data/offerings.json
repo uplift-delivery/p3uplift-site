@@ -1,0 +1,112 @@
+{
+  "service_offerings": [
+    {
+      "service": "Software",
+      "slug": "software",
+      "icon_url": "/images/offerings/software_icon.png",
+      "description": "A Crazy Good Process",
+      "offerings": [
+        {
+          "id": "team-delivery",
+          "title": "Team Delivery",
+          "heading": "Assemble a team from our roster of skilled pros—or plug us in to pair with your organization.",
+          "content": "Our collaborative, cross-functional crew of software engineers, designers, researchers, and delivery leads get stuff done, bringing a fresh perspective and serious chops to existing or new and innovative products."
+        },
+        {
+          "id": "software-development",
+          "title": "Software Development",
+          "heading": "We design. We build. We deliver.",
+          "content": "Rock solid software isn’t written by accident. It’s all about code craftsmanship. Using practices like pair programming, Test Driven Development (TDD), and Continuous Integration (CI), your teams will become truly high performing—increasing velocity, reducing costs, and creating impeccable software."
+        },
+        {
+          "id": "devops",
+          "title": "DevOps",
+          "heading": "Our software development teams operate from a DevOps mindset, creating adaptable systems and focusing on quality assurance (rather than quality control).",
+          "content": "We avoid maintaining legacy systems—emphasizing instead a modern, future-moving workflow and skilled staff that isn’t just solving short term tech problems."
+        },
+        {
+          "id": "pocs-and-mvps",
+          "title": "POCs & MVPs",
+          "heading": "Get to market faster without wasting budget or capital.",
+          "content": "The more you invest in something, the harder it is to pivot. P3+Uplift’s team first creates a Proof of Concept (POC), and if the POC proves successful, we refine the product by developing a Minimum Viable Product (MVP) focused on delivering essential value. In other words, we work with you to get the simplest, low-cost solution in front of people for feedback sooner—whether that’s designed, coded, or fully loaded."
+        },
+        {
+          "id": "research-and-strategy",
+          "title": "Research & Strategy",
+          "heading": "How well do you know your customers? How confident are you that your new feature won’t be a flop? Where do things fail today?",
+          "content": "Turn these questions into answers, then answers into action. Our human-centered research approach focuses on asking the right questions and building the right thing."
+        },
+        {
+          "id": "roadmaps-and-release-planning",
+          "title": "Roadmaps & Release Planning",
+          "heading": "Most tech initiatives we come across are big, complex, and ambitious. And we love to see that!",
+          "content": "At the same time, how do we move fast and get the product to market? Our collaborative thin-slice approach breaks down complexity into simple, end-to-end outcomes spanning an entire system that deliver value to users sooner."
+        }
+      ]
+    },
+    {
+      "service": "Staffing",
+      "slug": "staffing",
+      "icon_url": "/images/offerings/staffing_icon.png",
+      "description": "Mad Staffing + Recruiting Skills",
+      "offerings": [
+        {
+          "id": "staff-augmentation",
+          "title": "Staff Augmentation",
+          "heading": "P3+Uplift excels at flexible outsourcing for temporary gaps in your workforce.",
+          "content": "Our Consultants enhance your in-house team’s capabilities, seamlessly working alongside the existing team for specific projects or to meet your short-term needs."
+        },
+        {
+          "id": "direct-hire",
+          "title": "Direct Hire",
+          "heading": "When you need highly qualified direct hires for long-term employment, P3+Uplift has solutions.",
+          "content": "Our Candidate pool is deep and wide, and we have expert Recruiters with experience in all industries. Because we build relationships over time, we have a depth of knowledge about Candidates and can identify the best one to fit your unique needs."
+        },
+        {
+          "id": "contract-to-hire",
+          "title": "Contract to Hire",
+          "heading": "P3+Uplift is your partner in flexible staffing.",
+          "content": "We are well-versed in contract-to-hire situations and are confident in our Consultants. During the contract phase, you can assess their performance, their fit within the company, and their long-term potential. Our Account Executives will communicate with you and the Consultant throughout the process to ensure everyone’s satisfaction."
+        },
+        {
+          "id": "blended-team-delivery",
+          "title": "Blended Team Delivery",
+          "heading": "The versatile option that you didn’t know you needed.",
+          "content": "Blended Team Delivery means P3+Uplift pairs with your team to accelerate projects. This is efficient and cost-effective because working knowledge stays in-house: Not only do we guide projects from kickoff to transition, we upskill your team."
+        }
+      ]
+    },
+    {
+      "service": "Executive Services",
+      "slug": "executives",
+      "icon_url": "/images/offerings/executive_icon.png",
+      "description": "Top Tier Leadership",
+      "offerings": [
+        {
+          "id": "executive-search",
+          "title": "Executive Search",
+          "heading": "Utilizing P3+Uplift’s time-tested and proven approach to uncover leaders ready to advance their careers.",
+          "content": "Our skilled team acts as an extension of your company, directly engaging the passive marketplace to deliver the best possible leaders. We provide regular updates on search progress, ensuring confidentiality and transparency throughout the entire process."
+        },
+        {
+          "id": "executive-coaching",
+          "title": "Executive Coaching",
+          "heading": "P3+Uplift’s executive development program is tailored to you.",
+          "content": "We enhance leadership effectiveness through skill-building, essential training tools, and in-depth interview prep. By collaborating with leading experts and monitoring workplace trends, we ensure you are ready to lead from day one."
+        },
+        {
+          "id": "recruiter-training",
+          "title": "Recruiter Training",
+          "heading": "Equipping your team to succeed in the evolving recruitment landscape.",
+          "content": "Our specialized program prepares recruiters to effectively attract top talent and optimize tools like Applicant Tracking Systems (ATS). These industry insights improve overall effectiveness, foster growth, and strengthen your organization’s talent pipeline."
+        },
+        {
+          "id": "fractional-leadership",
+          "title": "Fractional Leadership",
+          "heading": "Targeted and temporary leadership roles that value agility.",
+          "content": "Our customizable approach effectively bridges gaps during executive transitions, such as hiring delays or retirements. Access high-level leadership and talent without a full-time commitment, providing exceptional capabilities at a fraction of the cost."
+        }
+      ]
+    }
+  ]
+}

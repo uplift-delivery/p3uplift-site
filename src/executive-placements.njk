@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+
+seoTitle: Executive Placements
+metaDescription: CTOs, CPOs, and VPs placed with speed and precision. P3+Uplift matches tech leaders to the product and engineering needs of your company.
+
+title: Executive Placements
+summary: "Trust. That’s what executive placements comes down to, right? Every organization, no matter its size or location, deserves top-quality executive and senior leader Candidates. And every Candidate on a hiring journey deserves curated options chosen to suit your talents."
+
+pageClass: service
+---
+<header class="page-header {{ pageClass }}">
+  <div class="container">
+    <h1 class="page-title">{{ title }}</h1>
+		<div class="page-summary">{{ summary | safe }}</div>
+  </div>
+</header>
+
+{% set entry = featured["executive"] %}
+{% set layout = "image-right" %}
+{% set background = "white" %}
+{% include "components/feature-block.njk" %}
+
+{% set category = "executives" %}
+{% include "components/offerings.njk" %}
+
+{% set featured_study = "cto-placement" %}
+{% set study = null %}
+{% for item in casestudies.case_studies %}
+  {% if item.id == featured_study %}
+    {% set study = item %}
+    {% include "components/featured-case-study.njk" %}
+  {% endif %}
+{% endfor %}
+
+{% set section_title = "We Offer More" %}
+{% set lead = "You + Us. Each hiring journey can have twists and turns before the summit is reached. Whether you’re a Candidate or a Hiring Manager, P3+Uplift walks with you to deliver one-of-a-kind results." %}
+{% set list = process.executives %}
+{% include "components/process-block.njk" %}
+
+<section class="quote-feature video--right">
+  <div class="container__wide quote-feature__container">
+    
+    <div class="quote-feature__video-wrapper">
+      <iframe width="1013" height="570" src="https://www.youtube.com/embed/eelRSMQlMvM?rel=0&controls=0&modestbranding=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    {% set entry = blockquotes["bj-brugman"] %}
+    {% include "components/styled-quotes.njk" %}
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-grid invert-button-style">
+      <h2 class="heading-2">Start Your Journey</h2>
+      <p class="section-subheading">P3+Uplift will guide you on your next ascent.</p>
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+</section>
+
+{% set testimonial_section_title = "What People Say" %}
+{% set testimonial_category = "executives" %}
+{% include "components/testimonials.njk" %}

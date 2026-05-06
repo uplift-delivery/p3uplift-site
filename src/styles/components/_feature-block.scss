@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+.feature-block {
+
+  em {
+    font-style: normal;
+    font-weight: $f_bold;
+  }
+
+  &__image {
+    margin: 0 auto 3rem auto;
+    width: 20rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $c_navy-night;
+    margin-bottom: 1rem;
+
+    em { color: $c_electric-blue; }
+
+    @media (min-width: $mq_desktop) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__content {
+    .link-button { margin-top: 2.5rem; }
+  }
+
+  &__body {
+    p { margin-bottom: 1rem; }
+  }
+}
+
+@media (min-width: $mq_tablet) {
+  .feature-block {
+    .container__small {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    // Handle the "Image Right" layout
+    &.reverse-row {
+      .container__small { flex-direction: row-reverse; }
+    }
+
+    &__image {
+      margin: 0;
+      flex: 0 0 28rem;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+@use "variables" as *;
+
+.leadership-section {
+  background-color: $c_powder-blue;
+}
+
+.leader {
+  &__card {
+    padding: 4rem;
+    border-radius: 3rem 3rem 3rem 0;
+    background-color: $c_white;
+  }
+
+  &__preview {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  &__intro {
+    position: relative;
+    padding-left: 4rem;
+
+    .quotation__content {
+      &:before {
+        content: "\201C";
+        color: $c_blaze-orange;
+        width: 3rem;
+        height: 3rem;
+        left: 0;
+        position: absolute;
+        font-size: 6rem;
+        line-height: 0.75;
+        font-family: 'Arial Black';
+        font-weight: $f_heavy;
+      }
+    }
+
+    .quotation__role {
+      display: block;
+      line-height: 1.25;
+      margin-left: 1.875rem;
+    }
+  }
+
+  &__image {
+    flex: 0 0 10rem;
+  }
+
+  &__name {
+    display: block;
+    color: $c_electric-blue;
+    font-size: 1.5rem;
+    font-family: $f_poppins;
+    font-style: normal;
+    font-weight: $f_bold;
+    line-height: 1;
+    margin: 0.75rem 0;
+  }
+
+  &__bio {
+    margin-top: 1rem;
+    position: relative;
+
+    summary {
+      text-align: right;
+      text-transform: uppercase;
+      color: $c_electric-blue;
+      font-weight: $f_bold;
+      font-size: 1.25rem;
+      position: relative;
+
+      &::marker {
+        content: "";
+        display: none;
+      }
+
+      &::-webkit-details-marker {
+        display: none; // Specific fix for Safari
+      }
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        right: 7.5rem;
+        background-color: currentColor;
+        transition: all 200ms cubic-bezier(0.6, -0.28, 0.74, 0.05);
+      }
+
+      // Horizontal Line (Always visible)
+      &:after {
+        width: 0.75rem;
+        height: 0.125rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      // Vertical Line (The "plus" part)
+      &:before {
+        width: 0.125rem;
+        height: 0.75rem;
+        top: 50%;
+        right: 7.8rem; // Adjust to center over the horizontal line
+        transform: translateY(-50%);
+      }
+    }
+
+    // Toggle logic for open state
+    &[open] {
+      summary {
+        &:before {
+          // Rotate or scale the vertical line to hide it, creating a minus sign
+          height: 0rem;
+        }
+        
+        &:after {
+          // Optional: slight rotation or color change for the minus sign
+          background-color: $c_blaze-orange; // Example brand color
+        }
+      }
+    }
+
+    &-content {
+      p {
+        margin-top: 1rem;
+        &:first-child {
+          font-size: 1.125rem;
+          font-weight: $f_bold;
+          line-height: 1.2;
+
+        }
+      }
+    }
+  }
+}
+
+.mission-section {
+  background: $gradient-blue;
+  color: $c_white;
+
+  header { margin-bottom: 2rem; }
+
+  .values-accordion { margin-bottom: 2rem; }
+}
