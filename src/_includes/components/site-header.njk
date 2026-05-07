@@ -1,6 +1,6 @@
 <header role="banner">
-  <div>
-    <div>
+  <div class="container container__wide">
+    <div class="nav__wrapper">
       
       <a class="header__logo" href="/" rel="home" aria-label="homepage">
         <svg  viewBox="0 0 500 115" role="img" aria-labelledby="logo-title"  xmlns="http://www.w3.org/2000/svg">
@@ -15,17 +15,17 @@
           Menu
         </button>
 
-        <ul>
+        <ul class="navigation__menu invert-button-style">
           {% for item in navigation.menuItems %}
-            <li>
-              <a href="{{ item.url }}" {% if item.subItems %}aria-haspopup="true" aria-expanded="false"{% endif %}>
+            <li class="navigation__menu-item {% if item.subItems %} has-submenu{% endif %}">
+              <a class="{% if item.isButton %}link-button link-button--outline{% endif %}" href="{{ item.url }}" {% if item.subItems %}aria-haspopup="true" aria-expanded="false"{% endif %}>
                 {{ item.text }}
               </a>
 
               {% if item.subItems %}
-                <ul>
+                <ul class="navigation__submenu">
                   {% for subItem in item.subItems %}
-                    <li>
+                    <li class="navigation__submenu-item">
                       <a href="{{ subItem.url }}">{{ subItem.text }}</a>
                     </li>
                   {% endfor %}

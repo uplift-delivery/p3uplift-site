@@ -3,31 +3,147 @@
 header[role="banner"] {
   background: $gradient-blue;
   color: $c_white;
-  padding: 4rem 1.25rem 2rem 1.25rem;
+  padding: 3rem 1.25rem 2rem 1.25rem;
 
   .header__logo {
     display: block;
-    width: 16rem;
+    width: 14rem;
     line-height: 1;
+    align-self: flex-start;
+    flex: 0 0 14rem;
+
+    @media (min-width: $mq_tablet) {
+      width: 10rem;
+      flex-basis: 10rem;
+    }
+  }
+
+  .nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   nav {
-    // Navigation styles
+    @media (min-width: $mq_tablet) {
+      button { display: none; }
+      flex: 1 0 auto;
+      padding-left: 3rem;
+    }
     
-    ul {
-      // Main menu list
+    .navigation__menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @media (min-width: $mq_tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: normal;
+      }
+
+      @media (min-width: $mq_desktop) {
+        gap: 2.5rem;
+        justify-content: flex-end;
+      }
       
-      li {
-        // Main menu items
+      .navigation__menu-item {
+
+        @media (min-width: $mq_tablet) {
+          flex: 0 1 auto;
+          padding-bottom: 0.5rem;
+
+          &.has-submenu {
+            position: relative;
+
+            &:hover .navigation__submenu,
+            &:focus-within .navigation__submenu {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(0);
+              pointer-events: auto;
+            }
+          }
+        }
+
+        @media (min-width: $mq_desktop) {
+          flex: 0 0 auto
+        }
 
         a {
           color: $c_white;
           font-weight: $f_bold;
           text-decoration: none;
+          display: inline-block;
+          position: relative;
+
+          @media (min-width: $mq_tablet) {
+            padding: 0 0 0.25rem 0;
+
+            &:after {
+              content: "";
+              width: 100%;
+              height: 0;
+              background-color: transparent;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transition: height 200ms ease;
+            }
+
+            &:hover,
+            &:focus {
+              &:after {
+                background-color: $c_blaze-orange;
+                height: 3px;
+              }
+            }
+          }
+
+          &.link-button {
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+            &:hover,
+            &:focus { color: $c_electric-blue; }
+
+            &:after {
+              display: none;
+            }
+          }
         }
         
-        ul {
-          // Sub-menu logic
+        .navigation__submenu {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          @media (min-width: $mq_tablet) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 20rem;
+            background: $c_ballpoint;
+            padding: 1rem;
+            border-radius: 0 1.25rem 1.25rem 1.25rem;
+            box-shadow: 0 4px 12px rgba($c_black, 0.1);
+            
+            // Accessibility & Animation properties
+            opacity: 0;
+            visibility: hidden; 
+            transform: translateY(20px);
+            transition: all 200ms ease-in-out;
+            pointer-events: none; // Prevents accidental hover when hidden
+          }
+
+          &-item {
+            margin-bottom: 1rem;
+
+            &:last-child { margin-bottom: 0; }
+          }
         }
       }
     }
