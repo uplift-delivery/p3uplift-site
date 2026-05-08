@@ -10,6 +10,7 @@
         @media (min-width: $mq_tablet) {
             display: flex;
             flex-direction: row;
+            align-items: flex-start;
         }
     }
 
@@ -56,7 +57,7 @@
 
     @media (min-width: $mq_tablet) {
         &__visual {
-            flex: 1 1 40%;
+            flex: 0 1 30rem;
         }
         &__content {
             flex: 1 1 60%;
