@@ -9,7 +9,7 @@
     <div class="testimonials">
       {% for item in testimonials %}
         {% if item.categories.includes(testimonial_category) %}
-          <blockquote class="testimonial__item quotation__content">
+          <blockquote id="testimonial-{{ loop.index }}" class="testimonial__item quotation__content">
             <p class="testimonial__content quotation__text">{{ item.quote | safe }}</p>
             
             <footer class="testimonial__footer">
@@ -37,5 +37,21 @@
         {% endif %}
       {% endfor %}
     </div>
+
+    <nav class="testimonial-nav" aria-label="Testimonial navigation menu">
+      <ul class="testimonial-nav__list" role="list">
+        {% for item in testimonials %}
+          {% if item.categories.includes(testimonial_category) %}
+            <li class="testimonial-nav__item">
+              <a href="#testimonial-{{ loop.index }}" 
+                 class="testimonial-nav__dot" 
+                 aria-label="View testimonial {{ loop.index }}"
+                 aria-controls="testimonial-{{ loop.index }}">
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
   </div>
 </section>

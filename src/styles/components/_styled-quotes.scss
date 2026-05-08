@@ -34,6 +34,14 @@
 .quote-feature {
   padding: 0rem 1.25rem 2rem 1.25rem;
 
+  .page-header + & {
+    margin-top: -2rem;
+
+    @media (min-width: $mq_tablet) {
+      margin-top: 0;
+    }
+  }
+
   &__video-wrapper {
     // Modern 16:9 ratio
     aspect-ratio: 16 / 9; 
