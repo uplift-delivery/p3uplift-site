@@ -54,5 +54,19 @@
         "title": "Executive placement",
         "content": "We directly engage the passive marketplace, uncovering leaders who are referred and ready to advance their careers. Our skilled team partners with you to deliver the best possible executive services. We offer fractional leadership placements as well as leadership coaching services, too."
       }
+    ],
+  "ooux": [
+      {
+        "title": "Reduce rework. Build smart from the start",
+        "content": "Most teams discover data issues too late, leading to costly redesigns and tech debt. OOUX aligns design and development early with a shared object model, creating cleaner architecture and fewer headaches down the road."
+      },
+      {
+        "title": "Scalable patterns for rapid delivery",
+        "content": "Stop recreating the wheel. OOUX gives your team clear patterns for how your product works, helping teams avoid duplication and fragmentation. That clarity is your answer to building systems that scale intentionally — not accidentally."
+      },
+      {
+        "title": "Create clarity through common vocabulary",
+        "content": "Different words for the same thing lead to confusion. OOUX gives product, UX, and engineering teams a shared language for your business objects that reduces friction and improves collaboration."
+      }
     ]
 }

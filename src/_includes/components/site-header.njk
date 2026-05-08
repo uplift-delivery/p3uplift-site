@@ -11,14 +11,15 @@
       </a>
 
       <nav aria-label="Primary Navigation">
-        <button aria-expanded="false">
-          Menu
+        <button class="navigation__toggle" aria-expanded="false" aria-controls="main-menu">
+          <span class="hamburger" aria-hidden="true"></span>
+          <span class="toggle-text">Menu</span>
         </button>
 
         <ul class="navigation__menu invert-button-style">
           {% for item in navigation.menuItems %}
             <li class="navigation__menu-item {% if item.subItems %} has-submenu{% endif %}">
-              <a class="{% if item.isButton %}link-button link-button--outline{% endif %}" href="{{ item.url }}" {% if item.subItems %}aria-haspopup="true" aria-expanded="false"{% endif %}>
+              <a class="{% if item.isButton %}link-button link-button--outline{% endif %} {% if item.url == '#' %}navigation__menu--category{% endif %}" href="{{ item.url }}" {% if item.subItems %}aria-haspopup="true" aria-expanded="false"{% endif %}>
                 {{ item.text }}
               </a>
 

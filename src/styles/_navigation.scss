@@ -4,13 +4,14 @@ header[role="banner"] {
   background: $gradient-blue;
   color: $c_white;
   padding: 3rem 1.25rem 2rem 1.25rem;
+  position: relative;
 
   .header__logo {
     display: block;
-    width: 14rem;
+    width: 10rem;
     line-height: 1;
     align-self: flex-start;
-    flex: 0 0 14rem;
+    flex: 0 0 auto;
 
     @media (min-width: $mq_tablet) {
       width: 10rem;
@@ -25,10 +26,12 @@ header[role="banner"] {
   }
   
   nav {
+    
     @media (min-width: $mq_tablet) {
-      button { display: none; }
       flex: 1 0 auto;
       padding-left: 3rem;
+
+      .navigation__toggle { display: none; }
     }
     
     .navigation__menu {
@@ -36,12 +39,96 @@ header[role="banner"] {
       margin: 0;
       padding: 0;
 
+      @media (max-width: $mq_tablet) {
+        position: absolute;
+        top: 0rem;
+        right: 0;
+        background: rgba($c_ballpoint, 0.75);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(0.5rem); 
+        // Fallback for older browsers (like older versions of Safari)
+        -webkit-backdrop-filter: blur(0.5rem);
+        width: 100%;
+        height: 100vh;
+        padding: 1rem 2rem;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 0;
+
+        // 2. The "Curtain" Setup
+        transform: scaleY(0);
+        transform-origin: top;
+        visibility: hidden;
+        transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1), visibility 500ms;
+
+        // 3. The "Curtain Down" State
+        &.is-open {
+          transform: scaleY(1);
+          visibility: visible;
+          z-index: 1;
+
+          // Reveal items only when the curtain is down
+          .navigation__menu-item {
+            opacity: 1;
+            transform: translateY(0);
+
+            @for $i from 1 through 8 {
+              &:nth-child(#{$i}) {
+                // Add delay so items drop in after the curtain starts
+                transition-delay: #{0.3 + ($i * 0.08)}s;
+              }
+            }
+          }
+        }
+
+        // 4. Fancy Staggered Content
+        .navigation__menu-item {
+          opacity: 0;
+          transform: translateY(-1.25rem);
+          transition: all 400ms ease;
+
+          @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+              transition-delay: 0s;
+            }
+          }
+        }
+
+        .navigation__menu-item,
+        .navigation__submenu-item {
+          line-height: 1;
+          padding: 0;
+          margin-bottom: 0;
+
+          a {
+            font-size: 1.375rem;
+            font-family: $f_poppins;
+            line-height: 1;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+
+            &.navigation__menu--category {
+              color: $c_blaze-orange;
+            }
+
+            &:hover:not(.navigation__menu--category) {
+              text-decoration: underline;
+              color: $c_ice-blue;
+            }
+          }
+        }
+      }
+
       @media (min-width: $mq_tablet) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: normal;
+        position: relative;
       }
 
       @media (min-width: $mq_desktop) {
@@ -82,7 +169,21 @@ header[role="banner"] {
           @media (min-width: $mq_tablet) {
             padding: 0 0 0.25rem 0;
 
-            &:after {
+            &.navigation__menu--category {
+              &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 0.375rem solid transparent;  // Left side
+                border-right: 0.375rem solid transparent; // Right side
+                border-top: 0.375rem solid currentColor;  // The "base" of the triangle (pointing down)
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 0.25rem;
+              }
+            }
+
+            &:before {
               content: "";
               width: 100%;
               height: 0;
@@ -95,7 +196,7 @@ header[role="banner"] {
 
             &:hover,
             &:focus {
-              &:after {
+              &:before {
                 background-color: $c_blaze-orange;
                 height: 3px;
               }
@@ -106,11 +207,18 @@ header[role="banner"] {
             padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 
             &:hover,
-            &:focus { color: $c_electric-blue; }
+            &:focus {
+              color: $c_electric-blue;
+              text-decoration: none;
+            }
 
-            &:after {
+            &:before {
               display: none;
             }
+
+             @media (max-width: $mq_tablet) {
+              padding: 0.75rem 1rem;
+             }
           }
         }
         
@@ -118,7 +226,7 @@ header[role="banner"] {
           display: flex;
           flex-direction: column;
           list-style: none;
-          margin: 0;
+          margin: 0 0 0 1rem;
           padding: 0;
 
           @media (min-width: $mq_tablet) {
@@ -128,6 +236,7 @@ header[role="banner"] {
             min-width: 20rem;
             background: $c_ballpoint;
             padding: 1rem;
+            margin: 0;
             border-radius: 0 1.25rem 1.25rem 1.25rem;
             box-shadow: 0 4px 12px rgba($c_black, 0.1);
             
@@ -140,11 +249,72 @@ header[role="banner"] {
           }
 
           &-item {
-            margin-bottom: 1rem;
+            @media (min-width: $mq_tablet) {
+              margin-bottom: 1rem;
+            }
 
             &:last-child { margin-bottom: 0; }
           }
         }
+      }
+    }
+  }
+}
+
+.navigation__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: $c_white;
+  font-weight: $f_bold;
+  position: relative;
+  z-index: 999;
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem; // Middle Bar
+    background-color: currentColor;
+    transition: background-color 0.2s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0.125rem;
+      background-color: currentColor;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: -0.5rem; // Top Bar
+    }
+
+    &::after {
+      top: 0.5rem; // Bottom Bar
+    }
+  }
+
+  // Active State (X Animation)
+  &[aria-expanded="true"] {
+    .hamburger {
+      background-color: transparent; // Hide middle bar
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
       }
     }
   }

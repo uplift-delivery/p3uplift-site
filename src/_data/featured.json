@@ -33,6 +33,16 @@
     "cta_text": "See Why OOUX Matters",
     "cta_url": "/ooux/"
   },
+  "ooux-superpower": {
+    "id": "ooux-superpower",
+    "title": "A <am>Superpower</em>. Not a Buzzword",
+    "subtitle": "",
+    "description": "Complicated industry? Sophisticated products? No problem. Because we’re an OOUX agency, our certified experts use OOUX to ramp up fast! That means more time solving problems, not learning the lingo.",
+    "image": "/images/ooux_graphic.png",
+    "alt": "A woman holding a blue sticky note arranging colored sticky notes on a wall in front of her",
+    "cta_text": "",
+    "cta_url": ""
+  },
   "staffing": {
     "id": "staffing",
     "title": "Our Specialized Recruitment Process is Defined by <em>Quality</em>",

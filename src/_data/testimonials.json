@@ -4,7 +4,7 @@
       "title": "Applications Planning Manager"
     },
     "source": "Des Moines-based Health Insurance Company",
-    "quote": "P3+Uplift has been a go-to provider for staffing consultants for our team’s <strong>highly complex</strong> and unique projects. The team works closely with me to really understand the <strong>niche</strong> skills our products demand.",
+    "quote": "P3+Uplift has been a go-to provider for staffing consultants for our team’s <em>highly complex</em> and unique projects. The team works closely with me to really understand the <em>niche</em> skills our products demand.",
     "categories": ["client", "staffing", "executives"]
   },
   {
@@ -12,7 +12,7 @@
       "title": "VP of Employee Engagement"
     },
     "source": "Des Moines-based Technology Company",
-    "quote": "I’ve had the pleasure of working closely with P3+Uplift as a Recruited Candidate and Hiring Leader. The P3+Uplift team goes <strong>above and beyond</strong> to develop relationships with their consultants and clients.",
+    "quote": "I’ve had the pleasure of working closely with P3+Uplift as a Recruited Candidate and Hiring Leader. The P3+Uplift team goes <em>above and beyond</em> to develop relationships with their consultants and clients.",
     "categories": ["client", "staffing", "executives"]
   },
   {
@@ -21,7 +21,7 @@
       "role": "CEO & Co-Founder"
     },
     "source": "Genvax",
-    "quote": "I am <strong>blown away</strong> by the work of the P3+Uplift team. Having managed software products in the past, I had experience with working with individuals on new products in new markets … They also understood the ins and outs of design sprints which gave my internal team focus and let them do their day job.",
+    "quote": "I am <em>blown away</em> by the work of the P3+Uplift team. Having managed software products in the past, I had experience with working with individuals on new products in new markets … They also understood the ins and outs of design sprints which gave my internal team focus and let them do their day job.",
     "categories": ["client", "software"]
   },
   {
@@ -30,7 +30,7 @@
       "role": "Co-Founder and CEO"
     },
     "source": "Distynct",
-    "quote": "Where I’ve found that I clicked with this team is that there’s real <strong>genuine interest</strong> in what the business is doing and a genuine interest to help. <strong>I really feel that</strong> from this team.",
+    "quote": "Where I’ve found that I clicked with this team is that there’s real <em>genuine interest</em> in what the business is doing and a genuine interest to help. <em>I really feel that</em> from this team.",
     "categories": ["client", "software", "executives"]
   },
   {
@@ -39,7 +39,7 @@
       "role": ""
     },
     "source": "Current P3+Uplift Client",
-    "quote": "P3+Uplift has been <strong>instrumental</strong> in helping our group establish model behavior and practices within cross-functional product teams. The expertise and guidance each team member brought as part of multiple product teams provided valuable learning opportunities for our staff which in turn <strong>accelerated the maturity</strong> of our tech stack.",
+    "quote": "P3+Uplift has been <em>instrumental</em> in helping our group establish model behavior and practices within cross-functional product teams. The expertise and guidance each team member brought as part of multiple product teams provided valuable learning opportunities for our staff which in turn <em>accelerated the maturity</em> of our tech stack.",
     "categories": ["client", "software"]
   },
   {
@@ -48,7 +48,7 @@
       "role": "Vice President"
     },
     "source": "PigEasy",
-    "quote": "The P3+Uplift team went <strong>above & beyond</strong> to understand and succinctly deliver our project goals. Their ability to understand and translate our vision into an intuitively designed and functional app was <strong>truly impressive</strong>.",
+    "quote": "The P3+Uplift team went <em>above & beyond</em> to understand and succinctly deliver our project goals. Their ability to understand and translate our vision into an intuitively designed and functional app was <em>truly impressive</em>.",
     "categories": ["client", "software"]
   },
   {
@@ -56,7 +56,7 @@
       "title": "Former VP of Technology"
     },
     "source": "Geonetric",
-    "quote": "The positive impact P3+Uplift has had on our team in two 10-week engagements has been absolutely incredible. The <strong>talent level is so high</strong> that you don’t necessarily need a long-term engagement to see a <strong>significant ROI</strong>.",
+    "quote": "The positive impact P3+Uplift has had on our team in two 10-week engagements has been absolutely incredible. The <em>talent level is so high</em> that you don’t necessarily need a long-term engagement to see a <em>significant ROI</em>.",
     "categories": ["client", "software", "staffing"]
   },
   {
@@ -64,8 +64,16 @@
       "title": "Chief Technology Officer"
     },
     "source": "Iowa construction & materials company",
-    "quote": "The best investment of the year. Not only did we get an innovative product that offered high value for our business, but the paired development with my junior level team generated some <strong>huge wins</strong> in their engineering maturity. We now have some <strong>rock-solid foundations</strong> to keep moving forward internally.",
+    "quote": "The best investment of the year. Not only did we get an innovative product that offered high value for our business, but the paired development with my junior level team generated some <em>huge wins</em> in their engineering maturity. We now have some <em>rock-solid foundations</em> to keep moving forward internally.",
     "categories": ["client", "software"]
+  },
+  {
+    "person": {
+      "title": "R&D Executive"
+    },
+    "source": "Ph.D. in Microbiology & Molecular Biology",
+    "quote": "It has been impressive to see the team’s commitment to learn about and truly gain an understanding of the complex science and technology of our product. Their team understands more of the details than people who work in this field daily.",
+    "categories": ["ooux"]
   },
   {
     "person": {

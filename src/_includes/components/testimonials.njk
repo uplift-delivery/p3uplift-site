@@ -1,5 +1,5 @@
 <section class="testimonials-section section-block">
-  <div class="container">
+  <div class="container container__small">
     {% if testimonial_section_title %}
       <h2 class="section-title heading-2">
         {{ testimonial_section_title }}
@@ -9,15 +9,16 @@
     <div class="testimonials">
       {% for item in testimonials %}
         {% if item.categories.includes(testimonial_category) %}
-          <blockquote class="testimonial__item">
-            <p class="testimonial__content">{{ item.quote | safe }}</p>
+          <blockquote class="testimonial__item quotation__content">
+            <p class="testimonial__content quotation__text">{{ item.quote | safe }}</p>
             
             <footer class="testimonial__footer">
-              <cite class="testimonial__author">
+              <cite class="testimonial__author quotation__author">
+                &mdash;
                 {% if item.person.name %}
-                  {{ item.person.name }}
+                  {{ item.person.name }},
                 {% else %}
-                  {{ item.person.title }}
+                  {{ item.person.title }},
                 {% endif %}
               </cite>
 

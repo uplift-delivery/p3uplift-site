@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+seoTitle: What is OOUX?
+metaDescription: Object-Oriented UX (OOUX) accelerates modernization and lays the foundation for AI-driven solutions. By breaking complex systems into clear, real-world objects, empowers IT & product teams to design intuitive, future-ready software OOUX.
+title: The OOUX Factor
+summary: "Object-Oriented UX (OOUX) isn’t about screens. It’s about structure. Our firm is OOUX focused, designing systems the way people think: clear objects, clean relationships, and scalable architecture."
+pageClass: homepage
+---
+<header class="page-header">
+  <div class="container container__wide">
+    <h1 class="page-title">{{ title }}</h1>
+		<div class="page-summary">{{ summary | safe }}</div>
+  </div>
+</header>
+<section class="quote-feature video--right">
+  <div class="container container__wide container--encroach quote-feature__container">
+    
+    <div class="quote-feature__video-wrapper">
+      <iframe width="1013" height="570" src="https://www.youtube.com/embed/1_T1bJSlX5E?si=O_NdFw93FSxMjkip"?rel=0&controls=0&modestbranding=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    {% set entry = blockquotes["kayla-ferris"] %}
+    {% include "components/styled-quotes.njk" %}
+
+  </div>
+</section>
+
+{% set section_title = "Why Do IT & Product Leaders Like OOUX?" %}
+{% set lead = "OOUX sparks collaboration from the get-go, aligning business, design, and engineering peers early on core product decisions." %}
+{% set list = process.ooux %}
+{% include "components/process-block.njk" %}
+
+
+{% set entry = featured["ooux-superpower"] %}
+{% set layout = "image-left" %}
+{% set background = "powder-blue" %}
+{% include "components/feature-block.njk" %}
+
+{% set testimonial_section_title = "What Our Clients Say" %}
+{% set testimonial_category = "ooux" %}
+{% include "components/testimonials.njk" %}
+
+{% set featured_study = "ooux-finance-ag-data" %}
+{% set study = null %}
+{% for item in casestudies.case_studies %}
+  {% if item.id == featured_study %}
+    {% set study = item %}
+    {% include "components/featured-case-study.njk" %}
+  {% endif %}
+{% endfor %}
+
+<section class="cta-section">
+<div class="container container__wide">
+  <div class="wrapper cta-grid invert-button-style">
+      <h2 class="heading-2">Make Sense of Any Mess</h2>
+      <p class="section-subheading">FWrangle complexity with the help of our certified OOUX pros.</p>
+      {% set style = "outline" %}
+      {% set btnText = "Let's Talk" %}
+      {% set btnUrl = "/lets-talk/" %}
+      {% include "components/link-button.njk" %}
+  </div>
+  </div>
+</section>

@@ -29,6 +29,7 @@ export default function (eleventyConfig) {
 
   // Passthroughs (Moving static assets)
   eleventyConfig.addPassthroughCopy("./src/images");
+  eleventyConfig.addPassthroughCopy("./src/js");
 
   return {
     dir: {

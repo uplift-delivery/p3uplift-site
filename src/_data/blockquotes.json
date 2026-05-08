@@ -16,5 +16,14 @@
       "role": "CEO & Co-Founder",
       "company": "Distynct"
     }
+  },
+  "kayla-ferris": {
+    "id": "kayla",
+    "quote": "OOUX makes big, messy problems feel reasonable and doable.",
+    "person": {
+      "name": "Kayla Ferris",
+      "role": "Product Designer & Advanced OOUX Strategist",
+      "company": ""
+    }
   }
 }
