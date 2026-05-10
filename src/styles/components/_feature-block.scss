@@ -9,7 +9,7 @@
 
   &__image {
     margin: 0 auto 3rem auto;
-    width: 20rem;
+    width: 18rem;
   }
 
   &__title {
@@ -44,6 +44,15 @@
 
     &__image {
       margin: 0;
+      flex: 0 0 20rem;
+      width: 20rem;
+    }
+  }
+}
+
+@media (min-width: $mq_widescreen) {
+  .feature-block {
+    &__image {
       flex: 0 0 24rem;
       width: 24rem;
     }

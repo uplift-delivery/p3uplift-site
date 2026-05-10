@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 heading1: Privacy Policy
 description: This Privacy Policy outlines how P3+Uplift collects, uses, discloses, and safeguards your information.
+tags: pages
 ---
 
 # {{ heading1 }}

@@ -15,9 +15,9 @@
       <h2 class="heading-2">{{ data.description }}</h2>
     </header>
 
-    <article>
+    <article class="offerings__group">
       {% for item in data.offerings %}
-      <section id="{{ item.id }}">
+      <section class="offering__item" id="{{ item.id }}">
         <h3>{{ item.title }}</h3>
         <div class="content">
           <p>{{ item.heading }}</p>

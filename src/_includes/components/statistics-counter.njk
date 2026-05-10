@@ -1,0 +1,42 @@
+<section class="stats-section section-block">
+  <div class="container">
+    <div class="stats-grid">
+      {% for item in statistics.stats %}
+        <article class="stat-item">
+          {# 1. Icon #}
+          <div class="stat-item__icon" aria-hidden="true">
+            <img src="{{ item.icon_url }}" alt="" width="80" height="80">
+          </div>
+
+          <div class="stat-item__content">
+            {# 2. Number Container (The Parent for the Odometer) #}
+            <div class="stat-item__number-container">
+              <span class="sr-only">{{ item.value }}{{ item.suffix }} {{ item.label }}</span>
+              
+              <div class="odometer-wrapper" aria-hidden="true">
+                {% set digits = item.value | string | list %}
+                {% set start_digits = item.start_value | default(0) | string | list %}
+                
+                {% for digit in digits %}
+                  {% set start_digit = start_digits[loop.index0] if start_digits[loop.index0] else 0 %}
+                  
+                  <span class="odometer-column">
+                    <span class="odometer-ribbon" 
+                          style="--start-digit: {{ start_digit }}; --target-digit: {{ digit }};">
+                      <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                    </span>
+                  </span>
+                {% endfor %}
+              </div>
+              
+              <span class="stat-item__suffix" aria-hidden="true">{{ item.suffix }}</span>
+            </div>
+
+            {# 3. Label #}
+            <h3 class="stat-item__label">{{ item.label }}</h3>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

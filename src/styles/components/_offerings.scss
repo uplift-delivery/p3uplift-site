@@ -5,15 +5,21 @@
 		background-color: $c_powder-blue;
 
 		.container {
-			@media (min-width: $mq_tablet) {
-			    display: grid;
-			    grid-template-columns: 40% 1fr;
-			    gap: 2rem;
-			}
+			// @media (min-width: $mq_tablet) {
+			//     display: grid;
+			//     grid-template-columns: 40% 1fr;
+			//     gap: 2rem;
+			// }
 		}
 
 		h2 { color: $c_electric-blue; }
-		header { margin-bottom: 3rem; }
+
+		header {
+			margin-bottom: 3rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
 
 		h3 {
 			font-size: 1.5rem;
@@ -35,7 +41,7 @@
 				}
 			}
 
-			@media (min-width: $mq_widescreen) {
+			@media (min-width: $mq_tablet) {
 			    display: grid;
 			    grid-template-columns: 1fr 1fr;
 			    gap: 2rem;
@@ -46,8 +52,8 @@
 	}
 
 	&__icon {
-		width: 4.5rem;
-		margin-bottom: 1.5rem;
+		width: 3.5rem;
+		margin-right: 1.5rem;
 	}
 
 }
