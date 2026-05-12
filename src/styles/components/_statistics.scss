@@ -19,6 +19,8 @@
 
   &__icon {
     margin-bottom: 1.5rem;
+    height: 5rem;
+    width: 5rem;
     
     img {
       display: block;
@@ -71,9 +73,6 @@
 .odometer-ribbon {
   display: flex;
   flex-direction: column;
-  
-  // The animation now starts from --start-digit and rolls to --target-digit
-  animation: odometerRun 3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
   span {
     display: block;
@@ -81,6 +80,15 @@
     line-height: 1em; // Critical: prevents vertical drift
     text-align: center;
   }
+}
+
+[data-animate="true"] {
+
+  .odometer-ribbon {
+    // The animation now starts from --start-digit and rolls to --target-digit
+    animation: odometerRun 3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
 }
 
 @keyframes odometerRun {

@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "title": "Software Development & Products",
+      "teaser": "When it comes to tech solutions, you’re in the best of hands.",
+      "description": "We bring together expert designers, engineers, researchers, and delivery leads into one dream team — then we integrate them seamlessly within your organization. From Agile software development through product design and execution, no task is too big, too custom, or too complex for our innovative teams to handle. Like tech ninjas, we travel lightly, work efficiently, and are devastatingly effective.",
+      "icon": "icon-software_dev",
+      "link_url": "/software-development-and-products/",
+      "link_text": "Software Development"
+    },
+    {
+      "title": "Staff Augmentation",
+      "teaser": "Your tech and talent sherpas.",
+      "description": "Whether it’s for a short-term or permanent placement, our Account Executives and Recruiters deliver top-quality candidates. We focus on your objectives, offer personalized solutions, and provide ongoing support throughout the process. Our goal is to exceed your expectations every step of the way.",
+      "icon": "icon-staffing",
+      "link_url": "/staffing-recruitment/",
+      "link_text": "Staffing + Recruiting"
+    },
+    {
+      "title": "Executive Placements",
+      "teaser": "P3+Uplift knows how to identify, attract, and place the right senior executive for your needs.",
+      "description": "Top-level leadership is pivotal in a company’s success. We are uniquely relationship driven and have a select client list, so we produce access to talent not available through mainstream sources.",
+      "icon": "icon-executives",
+      "link_url": "/executive-placements/",
+      "link_text": "Executive Placements"
+    }
+  ]
+}

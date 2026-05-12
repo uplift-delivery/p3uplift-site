@@ -1,12 +1,12 @@
 <section class="stats-section section-block">
-  <div class="container">
+  <div class="container container__small">
     <div class="stats-grid">
       {% for item in statistics.stats %}
         <article class="stat-item">
           {# 1. Icon #}
-          <div class="stat-item__icon" aria-hidden="true">
-            <img src="{{ item.icon_url }}" alt="" width="80" height="80">
-          </div>
+          <svg class="stat-item__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#{{ item.icon }}"></use>
+          </svg>
 
           <div class="stat-item__content">
             {# 2. Number Container (The Parent for the Odometer) #}
@@ -39,4 +39,5 @@
       {% endfor %}
     </div>
   </div>
+{% include "partials/svg-stats_icons.njk" %}
 </section>

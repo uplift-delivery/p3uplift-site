@@ -1,0 +1,37 @@
+<section class="services-section section-block">
+  <div class="container container__wide">
+    <div class="services-grid">
+      {% for service in services.services %}
+        <article class="flip-card invert-button-style" tabindex="0" aria-labelledby="card-title-{{ loop.index }}">
+          <div class="flip-card__inner">
+            
+            {# Front Face #}
+            <div class="flip-card__front">
+              <svg class="flip-card__icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#{{ service.icon }}"></use>
+              </svg>
+              <h3 id="card-title-{{ loop.index }}" class="flip-card__title">
+                {{ service.title }}
+              </h3>
+              <p class="flip-card__teaser">{{ service.teaser | safe }}</p>
+              <svg class="flip-card__more" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                <path fill="currentColor" fill-rule="evenodd" d="M8.383 4.433c.529-.557 1.41-.58 1.967-.05L18.368 12l-8.018 7.617A1.391 1.391 0 0 1 8.433 17.6l5.895-5.6-5.895-5.6a1.39 1.39 0 0 1-.05-1.967" clip-rule="evenodd"/>
+              </svg>
+            </div>
+
+            {# Back Face #}
+            <div class="flip-card__back">
+              <h4 class="flip-card__back-title">{{ service.title }}</h4>
+              <p class="flip-card__description">{{ service.description }}</p>
+              {% set style = "outline" %}
+              {% set btnText = service.link_text %}
+              {% set btnUrl = service.link_url %}
+              {% include "components/link-button.njk" %}
+            </div>
+
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

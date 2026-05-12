@@ -5,21 +5,21 @@
       "value": 15,
       "start_value": "02",
       "suffix": "+",
-      "icon_url": ""
+      "icon": "icon-hiker"
     },
     {
       "label": "Years in business",
       "value": 22,
       "start_value": 10,
       "suffix": "+",
-      "icon_url": ""
+      "icon": "icon-signpost"
     },
     {
       "label": "Client retention rate",
       "value": 99,
       "start_value": 75,
       "suffix": "%",
-      "icon_url": ""
+      "icon": "icon-compass"
     }
   ]
 }
