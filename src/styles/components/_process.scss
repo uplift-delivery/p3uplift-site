@@ -10,7 +10,10 @@
 		}
 	}
 
-	em { color: $c_electric-blue; }
+	em {
+		color: $c_electric-blue;
+		font-style: normal;
+	}
 }
 
 .process {

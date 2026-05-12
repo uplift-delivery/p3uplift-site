@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+#careers-offerings {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.professional-roles-list {
+  columns: 3;
+  column-width: 13rem;
+  column-gap: 3rem;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: $f_bold;
+}

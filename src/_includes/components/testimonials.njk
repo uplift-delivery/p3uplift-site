@@ -38,13 +38,13 @@
       {% endfor %}
     </div>
 
-    <nav class="testimonial-nav" aria-label="Testimonial navigation menu">
-      <ul class="testimonial-nav__list" role="list">
+    <nav class="testimonial-nav slider-nav" aria-label="Testimonial navigation menu">
+      <ul class="testimonial-nav__list slider-nav__list" role="list">
         {% for item in testimonials %}
           {% if item.categories.includes(testimonial_category) %}
             <li class="testimonial-nav__item">
               <a href="#testimonial-{{ loop.index }}" 
-                 class="testimonial-nav__dot" 
+                 class="testimonial-nav__dot slider__dot" 
                  aria-label="View testimonial {{ loop.index }}"
                  aria-controls="testimonial-{{ loop.index }}">
               </a>

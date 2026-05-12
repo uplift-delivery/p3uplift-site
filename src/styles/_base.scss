@@ -143,3 +143,63 @@ svg {
     border-radius: 2rem;
   }
 }
+
+.image-bw {
+  filter: grayscale(100%);
+}
+
+.slider-nav {
+  margin-bottom: 2rem;
+
+  .slider-nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+
+    &:has(.testimonial-nav__item:only-child) {
+      display: none;
+    }
+  }
+
+  .slider__dot {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba($c_white, 0.5);
+    border: 0.125rem solid $c_electric-blue;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+    position: relative;
+
+    // Expand hit area for better UX/Mobile tapping
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -0.625rem; 
+    }
+
+    &:hover {
+      background-color: $c_electric-blue;
+      transform: scale(1.2);
+    }
+
+    // High-contrast focus ring for accessibility
+    &:focus-visible {
+      outline-offset: 4px;
+      background-color: $c_electric-blue;
+    }
+
+    &:focus {
+        background-color: $c_electric-blue;
+        outline: none; // Ensure you have a focus-visible style elsewhere!
+      }
+
+    // Styled when the Intersection Observer adds the active class
+    &.is-active {
+      background-color: $c_electric-blue;
+      transform: scale(1.3);
+    }
+  }
+}

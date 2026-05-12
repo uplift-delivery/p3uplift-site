@@ -8,7 +8,15 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media (min-width: $mq_tablet) {
+      header { max-width: 50%; }
+    }
   }
+
+  .heading-2 { color: $c_electric-blue; }
+
+  .section-subheading { margin-bottom: 0; }
 }
 
 .leader {
@@ -168,6 +176,8 @@
       font-size: 1.125rem;
       margin-bottom: 1.5rem;
     }
+
+    h2 { margin-bottom: 2rem; }
   }
 
   .container {
@@ -179,4 +189,64 @@
   }
 
   .values-accordion { margin-bottom: 2rem; }
+}
+
+.about__wrapper {
+  margin: 0 1rem;
+  display: flex;
+  overflow-x: auto;
+  align-items: flex-start;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; // The magic line
+  gap: 2rem;
+  
+  // Hide scrollbar for a cleaner look
+  scrollbar-width: none; 
+  &::-webkit-scrollbar { display: none; }
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 0 0 100%;
+  padding: 2rem 0;
+  scroll-snap-align: center; // Locks the card to the middle
+  scroll-snap-stop: always;
+
+  @media (min-width: $mq_tablet) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .about__content {
+    &-title {
+      color: $c_electric-blue;
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+
+      @media (min-width: $mq_widescreen) {
+        font-size: 2.75rem;
+      }
+    }
+
+    p {
+      margin-bottom: 1rem;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .about__image {
+    aspect-ratio: 4/3;
+    border-radius: 3rem 3rem 3rem 0;
+    margin-bottom: 2rem;
+    
+    @media (min-width: $mq_tablet) {
+      width: 40%;
+      flex: 0 1 40%;
+      margin-bottom: 0;
+    }
+  }
 }

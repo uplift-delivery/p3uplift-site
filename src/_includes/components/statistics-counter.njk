@@ -1,6 +1,6 @@
 <section class="stats-section section-block">
   <div class="container container__small">
-    <div class="stats-grid">
+    <div class="stats-grid animate__on-scren">
       {% for item in statistics.stats %}
         <article class="stat-item">
           {# 1. Icon #}
@@ -32,8 +32,7 @@
               <span class="stat-item__suffix" aria-hidden="true">{{ item.suffix }}</span>
             </div>
 
-            {# 3. Label #}
-            <h3 class="stat-item__label">{{ item.label }}</h3>
+            <p class="stat-item__label">{{ item.label }}</p>
           </div>
         </article>
       {% endfor %}
