@@ -14,15 +14,15 @@
     }
 
     @media (min-width: $mq_widescreen) {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 
   &__caption {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 1rem;
     font-weight: $f_bold;
-    line-height: 1;
+    line-height: 1.25;
 
     @media (min-width: $mq_widescreen) {
       font-size: 1.25rem;
@@ -43,6 +43,10 @@
     // @media (min-width: $mq_tablet) {
     //   margin-top: 0;
     // }
+  }
+
+  .quotation__text {
+    font-weight: $f_bold;
   }
 
   &__video-wrapper {
@@ -68,7 +72,7 @@
       grid-auto-flow: column;
       align-items: center;
       grid-template-columns: 40% 1fr;
-      gap: 2rem;
+      gap: 4rem;
     }
 
     &.video--right {
@@ -97,11 +101,11 @@
 
 @media (min-width: $mq_widescreen) {
   .quote-feature__container {
-      grid-template-columns: 50% 1fr;
+      grid-template-columns: 45% 1fr;
     }
 
   .container--encroach {
-    margin-top: -9rem;
+    margin-top: -12rem;
     padding-bottom: 2rem;
   }
 

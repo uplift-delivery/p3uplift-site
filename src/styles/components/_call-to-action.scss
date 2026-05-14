@@ -1,7 +1,12 @@
 @use "variables" as *;
 
 .cta-section {
-    background: $c_electric-blue;
+    background-image: url('/images/topography/contour-1.png');
+    background-color: $c_electric-blue;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto 120%, cover;
+
     color: $c_white;
     padding: 2.75rem 1rem 7.75rem 1rem;
     

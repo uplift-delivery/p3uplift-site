@@ -9,6 +9,10 @@ body {
 	outline-offset: 0.325rem;
 }
 
+main {
+  margin-top: -2rem;
+}
+
 h1, h2, h3 {
 	font-family: $f_poppins;
 	line-height: 1.2;

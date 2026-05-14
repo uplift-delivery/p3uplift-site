@@ -2,6 +2,11 @@
 
 
 .homepage .page-header {
+	background-image: url('/images/topography/contour-2.png'), $gradient-blue;;
+	background-repeat: no-repeat;
+	background-position: right 1rem;
+	background-size: auto 100%, contain;
+
 	.container {
 		@media (min-width: $mq_desktop) {
 			display: grid;
@@ -23,7 +28,7 @@
 .page-header {
 	background: $gradient-blue;
 	color: $c_white;
-	padding: 4rem 1.25rem 4rem 1.25rem;
+	padding: 2rem 0;
 
 	.container {
 
@@ -58,11 +63,12 @@
 }
 
 .page-summary {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: $f_semibold;
+	line-height: 1.625;
 
 	@media (min-width: $mq_widescreen) {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		// padding: 0 4rem;
 	}
 }
