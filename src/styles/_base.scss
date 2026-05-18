@@ -37,7 +37,10 @@ svg {
 }
 
 .section-block {
-	padding: 1.25rem;
+  padding: 1.25rem 1rem;
+  @media (min-width: $mq_tablet) {
+    padding: 1.25rem;
+  }
 
 	@media (min-width: $mq_desktop) {
 		padding: 2.75rem 1.5rem;

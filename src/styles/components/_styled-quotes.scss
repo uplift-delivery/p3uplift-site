@@ -35,10 +35,10 @@
 }
 
 .quote-feature {
-  padding: 0rem 1.25rem 2rem 1.25rem;
+  // padding: 0rem 1.25rem 2rem 1.25rem;
 
   .page-header + & {
-    margin-top: -2rem;
+    margin-top: -3rem;
 
     // @media (min-width: $mq_tablet) {
     //   margin-top: 0;
@@ -89,10 +89,10 @@
   .container--encroach {
     align-items: end;
     margin-top: -9rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
     .section-block + .quote-feature & {
-      margin-top: -2rem;
+      margin-top: -5rem;
       align-items: center;
     }
   }
@@ -105,7 +105,7 @@
     }
 
   .container--encroach {
-    margin-top: -12rem;
+    margin-top: -10rem;
     padding-bottom: 2rem;
   }
 

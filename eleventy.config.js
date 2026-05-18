@@ -30,6 +30,9 @@ export default function (eleventyConfig) {
   // Passthroughs (Moving static assets)
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/js");
+  eleventyConfig.addPassthroughCopy("./src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
 
   return {
     dir: {

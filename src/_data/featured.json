@@ -35,7 +35,7 @@
   },
   "ooux-superpower": {
     "id": "ooux-superpower",
-    "title": "A <am>Superpower</em>. Not a Buzzword",
+    "title": "A <em>Superpower</em>. Not a Buzzword",
     "subtitle": "",
     "description": "Complicated industry? Sophisticated products? No problem. Because we’re an OOUX agency, our certified experts use OOUX to ramp up fast! That means more time solving problems, not learning the lingo.",
     "image": "/images/ooux_graphic.png",
@@ -49,7 +49,7 @@
     "subtitle": "",
     "description": "<p>We screen Candidates through a rigorous process that includes technical assessments, interviews, and reference checks — ensuring we present only the most qualified Candidates.</p><p>It’s <em>flexible</em>, including contract, contract-to-hire, and full-time placements. And it’s <em>efficient</em>. On average, we aim to provide Candidates within one week.",
     "image": "/images/staffing_graphic.png",
-    "alt": "Staffing & Recruitment"
+    "alt": "An employee doing creative or coding work at a desk in a clean, modern office"
   },
   "executive": {
     "id": "executive",

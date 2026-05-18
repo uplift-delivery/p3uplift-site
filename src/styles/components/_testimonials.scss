@@ -19,7 +19,7 @@
   }
 
   .testimonials {
-    margin: 0 1rem;
+    margin: 0;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -41,16 +41,19 @@
 
   .testimonial__item {
     background: $c_powder-blue;
-    padding: 4rem 2.5rem 3rem 2.5rem;
+    padding: 4rem 1rem 3rem 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    padding-left: 4rem;
 
     flex: 0 0 100%;
     scroll-snap-align: center; // Locks the card to the middle
     scroll-snap-stop: always;
+
+    @media (min-width: $mq_tablet) {
+     padding-left: 4rem;
+    }
 
     p {
       color: $c_navy-night;
@@ -66,16 +69,26 @@
   .testimonial__meta {
     display: inline;
     color: $c_electric-blue;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: $f_roboto;
     font-style: normal;
     font-weight: $f_heavy;
     line-height: 1;
     margin: 0.75rem 0;
+
+     @media (min-width: $mq_tablet) {
+      font-size: 1.5rem;
+     }
   }
 
 
   .testimonial__content {
+    font-size: 1.125rem;
+
+     @media (min-width: $mq_tablet) {
+      font-size: 1.5rem;
+     }
+    
     &:before {
       content: "\201C";
       color: $c_blaze-orange;
@@ -83,10 +96,14 @@
       height: 3rem;
       left: 0;
       position: absolute;
-      font-size: 6rem;
+      font-size: 3.5rem;
       line-height: 0.75;
-      font-family: 'Arial Black';
+      font-family: 'Arial Black', sans-serif, monospace;
       font-weight: $f_heavy;
+
+       @media (min-width: $mq_tablet) {
+        font-size: 5rem;
+       }
     }
   }
 
