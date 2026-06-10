@@ -33,12 +33,13 @@ Or on a Mac, run `brew install aws` (Install [Homebrew](https://brew.sh/))
 # How to deploy:
   1. Build the site
   CDK deploys the _site/ folder, so make sure it's built first:
+```
   cd ..
   npm run build
 
   cd infra
   npx cdk deploy -c domainName=yourdomain.com
-
+```
   After deploy, the deploy will pause waiting for certificate validation. You'll need to:
 
   1. Go to ACM in the AWS Console (us-east-1) and find the pending certificate
