@@ -137,3 +137,9 @@ dist
 
 # Working files
 _site/
+
+# CDK
+infra/node_modules/
+infra/cdk.out/
+infra/*.js
+infra/*.d.ts
