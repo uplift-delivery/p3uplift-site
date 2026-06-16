@@ -25,7 +25,6 @@ export class StaticSiteStack extends cdk.Stack {
 
     const certificate = new acm.Certificate(this, "SiteCertificate", {
       domainName,
-      subjectAlternativeNames: [wwwDomain],
       validation: acm.CertificateValidation.fromDns(),
     });
 
@@ -34,7 +33,7 @@ export class StaticSiteStack extends cdk.Stack {
         origin: origins.S3BucketOrigin.withOriginAccessControl(siteBucket),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
-      domainNames: [domainName, wwwDomain],
+      domainNames: [domainName],
       certificate,
       defaultRootObject: "index.html",
       errorResponses: [

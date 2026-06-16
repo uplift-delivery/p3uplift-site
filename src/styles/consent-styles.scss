@@ -1,0 +1,16 @@
+@use "variables" as *; //Use 'as *' so you don't have to prefix every color
+
+// --------------------------------
+// Global Styles
+// --------------------------------
+#stcm-wrapper {
+  --boxShadow: -0.25rem 0.25rem 0.5rem 0px #00000012, 0px 0px 3rem 0px #0000001a;
+  --fontFamily: $f_roboto;
+  --primaryColor: #0054D1;
+  --backgroundColor: #FFF;
+  --textColor: #06080E;
+  --backdropBackgroundColor: #00000077;
+  --backdropBackgroundBlur: 0px;
+  --iconColor: #E26225;
+  --iconBackgroundColor: #E8F0FC;
+}
