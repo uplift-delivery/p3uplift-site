@@ -1,0 +1,16 @@
+<section class="tech-assocs section-block" aria-labelledby="tech-assocs-heading">
+  <div class="container container__wide">
+    <header class="tech-assocs__header">
+      <h2 id="tech-assocs-heading" class="heading-2 blue-text">Connected to pros in <em class="orange-text">different area codes</em></h2>
+      <p class="section-subheading">We&rsquo;re proud to be members of these tech communities that help our industry grow.</p>
+    </header>
+
+    <ul class="tech-assocs__grid">
+      {% for org in techassocs.techAssocs %}
+        <li class="tech-assocs__item{{ ' tech-assocs__item--square' if org.square }}">
+          <img src="{{ org.logo }}" alt="{{ org.name }} logo" width="{{ org.width }}" height="{{ org.height }}" loading="lazy" decoding="async">
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

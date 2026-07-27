@@ -1,0 +1,29 @@
+{
+    "techAssocs": [
+        {
+            "name": "Technology Association of Iowa",
+            "logo": "/images/tech-assocs/tech-org-logo_tai.png",
+            "width": 360,
+            "height": 125
+        },
+        {
+            "name": "Montana High Tech Business Alliance",
+            "logo": "/images/tech-assocs/tech-org-logo_montana.png",
+            "width": 250,
+            "height": 259,
+            "square": true
+        },
+        {
+            "name": "Technology Association of Oregon",
+            "logo": "/images/tech-assocs/tech-org-logo_tao.png",
+            "width": 245,
+            "height": 120
+        },
+        {
+            "name": "Kansas City Tech Council",
+            "logo": "/images/tech-assocs/tech-org-logo_kc-tech.png",
+            "width": 450,
+            "height": 100
+        }
+    ]
+}

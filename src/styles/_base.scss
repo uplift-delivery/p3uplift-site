@@ -22,6 +22,18 @@ svg {
 	display: block;
 }
 
+.orange-text {
+	color: $c_blaze-orange;
+  
+  &:is(em) { font-style: normal;}
+}
+
+.blue-text {
+	color: $c_electric-blue;
+  
+  &:is(em) { font-style: normal;}
+}
+
 .heading-2 {
 	font-size: 2rem;
 	font-weight: $f_bold;

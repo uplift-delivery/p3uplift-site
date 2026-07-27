@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.tech-assocs {
+  text-align: center;
+  padding-top: 6rem;
+  
+  &__grid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    gap: 6rem 3rem;
+
+    @media (min-width: $mq_tablet) {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    flex: 0 1 10rem;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $mq_tablet) {
+      flex: 0 1 auto;
+      min-width: 0;
+      width: 10rem;
+      height: 4rem;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &--square {
+      height: 6rem;
+    }
+  }
+}
