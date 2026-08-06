@@ -1,5 +1,5 @@
-# eleventy-sample
-Test 11ty project
+# P3+Uplift Static Site
+Built with 11ty, we recreated the p3uplift.com Wordpress website so there are no version updates, plugin changes, or login access. All changes are done in the `src` files, built, and then pushed to the hosting environment of choice.
 
 # Initial Setup
 1. Install the AWS CLI
